@@ -28,18 +28,21 @@
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
-                @Html.Partial("_LoginPartial")
+                @*@Html.Partial("_LoginPartial")*@
             </div>
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p class="text-center">
-                &copy; @DateTime.Now.Year - Dylan Taylor Art | 
-                <a href="#">Martin Taylor</a> |
-                Last Updated by Derek Peacock 12/09/2018
+        <footer class="text-center">
+            <p>
+                <a href="~/Home/Contact">Martin Taylor</a> 
+                &copy; @DateTime.Now.Year - Dylan Taylor Art |
+                <a href="http://www.bobdylanart.com/">Bob Dylan Art</a>
+            </p>
+            <p>
+                Website Last Updated by Derek Peacock 13/09/2018
             </p>
         </footer>
     </div>

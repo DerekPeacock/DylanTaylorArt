@@ -1,0 +1,10 @@
+﻿.gallery-height
+{
+    min-height: 340px;
+}
+.gallery
+{
+    border:solid thin;
+    border-color: #ffffff;
+    padding:10px;
+}

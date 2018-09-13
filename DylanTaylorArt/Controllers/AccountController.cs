@@ -137,7 +137,7 @@ namespace DylanTaylorArt.Controllers
         //
         // GET: /Account/Register
         [AllowAnonymous]
-        public ActionResult Register()
+        public ActionResult DisabledRegister()
         {
             return View();
         }
