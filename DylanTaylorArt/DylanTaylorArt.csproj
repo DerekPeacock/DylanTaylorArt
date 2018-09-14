@@ -202,6 +202,7 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Graphic.cs" />
+    <Compile Include="Models\GraphicCollection.cs" />
     <Compile Include="Models\GraphicDbContext.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
