@@ -27,17 +27,18 @@ namespace DylanTaylorArt.Models
 
         public GraphicFormats Format { get; set; }
 
-        [DataType(DataType.Date)]
-        public DateTime DateReleased { get; set; }
-
         [StringLength(60)]
         public string Paper { get; set; }
 
         public PictureAspects Aspect { get; set; }
 
-        public Size ImageSize { get; set; }
+        public double ImageWidth { get; set; }
 
-        public Size FrameSize { get; set; }
+        public double ImageHeight { get; set; }
+
+        public double PaperWidth { get; set; }
+
+        public double PaperHeight { get; set; }
 
         public GraphicStatus Status { get; set; }
 
@@ -60,16 +61,12 @@ namespace DylanTaylorArt.Models
 
             DisplayInCarousel = false;
             DisplayOnHomePage = false;
+            Paper = "Hahnemuhle 350gm Museum Etching Paper";
         }
 
-        public Size CalculateMetricSize(Size imperialSize)
+        public double CalculateMetricSize(double imperialSize)
         {
-            Size metricSize;
-
-            metricSize.height = imperialSize.height / INCHES_TO_CENTIMETERS;
-            metricSize.width = imperialSize.width / INCHES_TO_CENTIMETERS;
-
-            return metricSize;
+            return imperialSize / INCHES_TO_CENTIMETERS;
         }
     }
 
@@ -80,14 +77,9 @@ namespace DylanTaylorArt.Models
         Landscape
     }
 
-    public struct Size
+     public enum GraphicStatus
     {
-        public double width;
-        public double height;
-    }
-
-    public enum GraphicStatus
-    {
+        Unknown,
         ForSale,
         UnderOffer,
         Sold,

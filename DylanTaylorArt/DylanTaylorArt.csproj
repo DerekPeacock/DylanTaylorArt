@@ -194,12 +194,30 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\CollectionsController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809160820036_InitialCreate.cs" />
+    <Compile Include="Migrations\201809160820036_InitialCreate.Designer.cs">
+      <DependentUpon>201809160820036_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809160951124_PaperSize.cs" />
+    <Compile Include="Migrations\201809160951124_PaperSize.Designer.cs">
+      <DependentUpon>201809160951124_PaperSize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809160954372_removeDate.cs" />
+    <Compile Include="Migrations\201809160954372_removeDate.Designer.cs">
+      <DependentUpon>201809160954372_removeDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809161010462_ReplaceSize.cs" />
+    <Compile Include="Migrations\201809161010462_ReplaceSize.Designer.cs">
+      <DependentUpon>201809161010462_ReplaceSize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Graphic.cs" />
     <Compile Include="Models\GraphicCollection.cs" />
@@ -279,6 +297,11 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Gallery.cshtml" />
     <Content Include="Views\Home\DylanArt.cshtml" />
+    <Content Include="Views\Collections\Create.cshtml" />
+    <Content Include="Views\Collections\Delete.cshtml" />
+    <Content Include="Views\Collections\Details.cshtml" />
+    <Content Include="Views\Collections\Edit.cshtml" />
+    <Content Include="Views\Collections\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -295,6 +318,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201809160820036_InitialCreate.resx">
+      <DependentUpon>201809160820036_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809160951124_PaperSize.resx">
+      <DependentUpon>201809160951124_PaperSize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809160954372_removeDate.resx">
+      <DependentUpon>201809160954372_removeDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809161010462_ReplaceSize.resx">
+      <DependentUpon>201809161010462_ReplaceSize.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
