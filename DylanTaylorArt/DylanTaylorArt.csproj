@@ -196,6 +196,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\CollectionsController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\GraphicsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -302,6 +303,11 @@
     <Content Include="Views\Collections\Details.cshtml" />
     <Content Include="Views\Collections\Edit.cshtml" />
     <Content Include="Views\Collections\Index.cshtml" />
+    <Content Include="Views\Graphics\Create.cshtml" />
+    <Content Include="Views\Graphics\Delete.cshtml" />
+    <Content Include="Views\Graphics\Details.cshtml" />
+    <Content Include="Views\Graphics\Edit.cshtml" />
+    <Content Include="Views\Graphics\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

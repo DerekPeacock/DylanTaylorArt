@@ -1,0 +1,63 @@
+﻿@model IEnumerable<DylanTaylorArt.Models.Graphic>
+
+@{
+    ViewBag.Title = "Graphics List";
+}
+
+<h2>List of all Bob Dylan Graphics</h2>
+
+<p>
+    @Html.ActionLink("Add New Graphic", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Collection
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            Carousel
+        </th>
+        <th>
+            Home Page
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Collection.CollectionName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DisplayInCarousel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DisplayOnHomePage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.GraphicID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.GraphicID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.GraphicID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,154 @@
+﻿@model DylanTaylorArt.Models.Graphic
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Graphic</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CollectionId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CollectionId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LargeImagePath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LargeImagePath)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SmallImagePath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SmallImagePath)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Format)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Format)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Paper)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Paper)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Aspect)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aspect)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageWidth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImageWidth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageHeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImageHeight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PaperWidth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaperWidth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PaperHeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaperHeight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FramedWith)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FramedWith)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DisplayInCarousel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DisplayInCarousel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DisplayOnHomePage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DisplayOnHomePage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.GraphicID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
