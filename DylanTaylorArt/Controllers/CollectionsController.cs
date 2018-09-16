@@ -10,6 +10,7 @@ using DylanTaylorArt.Models;
 
 namespace DylanTaylorArt
 {
+    [Authorize()]
     public class CollectionsController : Controller
     {
         private GraphicDbContext db = new GraphicDbContext();

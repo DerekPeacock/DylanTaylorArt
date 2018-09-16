@@ -10,6 +10,7 @@ using DylanTaylorArt.Models;
 
 namespace DylanTaylorArt.Controllers
 {
+    [Authorize]
     public class GraphicsController : Controller
     {
         private GraphicDbContext db = new GraphicDbContext();
@@ -17,7 +18,8 @@ namespace DylanTaylorArt.Controllers
         // GET: Graphics
         public ActionResult Index()
         {
-            return View(db.Graphics.ToList());
+            var graphics = db.Graphics.Include(c => c.Collection);
+            return View(graphics.ToList());
         }
 
         // GET: Graphics/Details/5

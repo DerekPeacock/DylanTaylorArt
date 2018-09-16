@@ -11,7 +11,7 @@ namespace DylanTaylorArt.Models
         public int GraphicID { get; set; }
 
         [Required]
-        public int CollectionId { get; set; }
+        public int CollectionID { get; set; }
 
         [Required, StringLength(60)]
         public string Title { get; set; }

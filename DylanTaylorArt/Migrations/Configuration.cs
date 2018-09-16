@@ -19,24 +19,24 @@ namespace DylanTaylorArt.Migrations
 
         private void SeedCollections(GraphicDbContext context)
         {
-            context.GraphicCollections.AddOrUpdate(c => c.GraphicCollectionId,
+            context.GraphicCollections.AddOrUpdate(c => c.GraphicCollectionID,
                 new GraphicCollection
                 {
-                    GraphicCollectionId = 1,
+                    GraphicCollectionID = 1,
                     CollectionName = "The Drawn Blank Series",
                     Artist = Artists.Bob_Dylan,
                     Year = 2008
                 },
                 new GraphicCollection
                 {
-                    GraphicCollectionId = 2,
+                    GraphicCollectionID = 2,
                     CollectionName = "Collection",
                     Artist = Artists.Bob_Dylan,
                     Year = 2009
                 },
                 new GraphicCollection
                 {
-                    GraphicCollectionId = 3,
+                    GraphicCollectionID = 3,
                     CollectionName = "Collection",
                     Artist = Artists.Bob_Dylan,
                     Year = 2010
@@ -51,7 +51,7 @@ namespace DylanTaylorArt.Migrations
                 new Graphic
                 {
                     GraphicID = 1,
-                    CollectionId = 1,
+                    CollectionID = 1,
                     Title = "Side Walk Cafe",
 
                     Format = GraphicFormats.Standard,
@@ -66,7 +66,7 @@ namespace DylanTaylorArt.Migrations
                 new Graphic
                 {
                     GraphicID = 2,
-                    CollectionId = 1,
+                    CollectionID = 1,
                     Title = "Sunday Afternoon",
 
                     Format = GraphicFormats.Standard,
@@ -82,7 +82,7 @@ namespace DylanTaylorArt.Migrations
                 new Graphic
                 {
                     GraphicID = 3,
-                    CollectionId = 1,
+                    CollectionID = 1,
                     Title = "Vista from the Balcony",
 
                     Format = GraphicFormats.Standard,
@@ -98,7 +98,7 @@ namespace DylanTaylorArt.Migrations
                 new Graphic
                 {
                     GraphicID = 4,
-                    CollectionId = 1,
+                    CollectionID = 1,
                     Title = "Cassandra",
 
                     Format = GraphicFormats.Standard,

@@ -4,10 +4,13 @@
     ViewBag.Title = "Graphics List";
 }
 
-<h2>List of all Bob Dylan Graphics</h2>
+<section class="jumbotron">
+    <h1>Dylan Taylor Art</h1>
+    <h2>List of all Bob Dylan Graphics</h2>
+</section>
 
 <p>
-    @Html.ActionLink("Add New Graphic", "Create")
+    @Html.ActionLink("Add New Graphic", "Create", null, new { @class = "btn btn-success" })
 </p>
 <table class="table">
     <tr>
@@ -20,10 +23,10 @@
         <th>
             @Html.DisplayNameFor(model => model.Status)
         </th>
-        <th>
+        <th class="text-center">
             Carousel
         </th>
-        <th>
+        <th class="text-center">
             Home Page
         </th>
         <th>
@@ -43,19 +46,19 @@
         <td>
             @Html.DisplayFor(modelItem => item.Status)
         </td>
-        <td>
+        <td class="text-center">
             @Html.DisplayFor(modelItem => item.DisplayInCarousel)
         </td>
-        <td>
+        <td class="text-center">
             @Html.DisplayFor(modelItem => item.DisplayOnHomePage)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Price)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.GraphicID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.GraphicID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.GraphicID })
+            @Html.ActionLink("Edit", "Edit", new { id=item.GraphicID }, new { @class="btn btn-success"}) 
+            @Html.ActionLink("Details", "Details", new { id=item.GraphicID }, new { @class = "btn btn-default" }) 
+            @Html.ActionLink("Delete", "Delete", new { id=item.GraphicID }, new { @class = "btn btn-danger" })
         </td>
     </tr>
 }

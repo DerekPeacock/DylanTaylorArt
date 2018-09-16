@@ -1,13 +1,15 @@
 ﻿@model IEnumerable<DylanTaylorArt.Models.GraphicCollection>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Collection List";
 }
-
-<h2>Index</h2>
+<section class="jumbotron">
+    <h1>Dylan Taylor Art</h1>
+    <h2>List of all Bob Dylan Collections</h2>
+</section>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-success" })
 </p>
 <table class="table">
     <tr>
@@ -19,9 +21,6 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Year)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Description)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.ImagePath)
@@ -41,15 +40,12 @@
             @Html.DisplayFor(modelItem => item.Year)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.ImagePath)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.GraphicCollectionId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.GraphicCollectionId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.GraphicCollectionId })
+            @Html.ActionLink("Edit", "Edit", new { id=item.GraphicCollectionID }, new { @class = "btn btn-success" }) 
+            @Html.ActionLink("Details", "Details", new { id = item.GraphicCollectionID }, new { @class = "btn btn-default" } ) 
+            @Html.ActionLink("Delete", "Delete", new { id=item.GraphicCollectionID }, new { @class = "btn btn-warning" })
         </td>
     </tr>
 }
