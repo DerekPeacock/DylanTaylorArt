@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
 using DylanTaylorArt.Models;
 
@@ -18,7 +14,7 @@ namespace DylanTaylorArt
         // GET: Collections
         public ActionResult Index()
         {
-            return View(db.GraphicCollections.ToList());
+            return View(db.Collections.ToList());
         }
 
         // GET: Collections/Details/5
@@ -28,7 +24,7 @@ namespace DylanTaylorArt
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            GraphicCollection graphicCollection = db.GraphicCollections.Find(id);
+            Collection graphicCollection = db.Collections.Find(id);
             if (graphicCollection == null)
             {
                 return HttpNotFound();
@@ -47,11 +43,11 @@ namespace DylanTaylorArt
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "GraphicCollectionId,CollectionName,Artist,Year,Description,ImagePath")] GraphicCollection graphicCollection)
+        public ActionResult Create([Bind(Include = "CollectionId,CollectionName,Artist,Year,Description,ImagePath")] Collection graphicCollection)
         {
             if (ModelState.IsValid)
             {
-                db.GraphicCollections.Add(graphicCollection);
+                db.Collections.Add(graphicCollection);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -66,7 +62,7 @@ namespace DylanTaylorArt
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            GraphicCollection graphicCollection = db.GraphicCollections.Find(id);
+            Collection graphicCollection = db.Collections.Find(id);
             if (graphicCollection == null)
             {
                 return HttpNotFound();
@@ -79,7 +75,7 @@ namespace DylanTaylorArt
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "GraphicCollectionId,CollectionName,Artist,Year,Description,ImagePath")] GraphicCollection graphicCollection)
+        public ActionResult Edit([Bind(Include = "CollectionId,CollectionName,Artist,Year,Description,ImagePath")] Collection graphicCollection)
         {
             if (ModelState.IsValid)
             {
@@ -97,7 +93,7 @@ namespace DylanTaylorArt
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            GraphicCollection graphicCollection = db.GraphicCollections.Find(id);
+            Collection graphicCollection = db.Collections.Find(id);
             if (graphicCollection == null)
             {
                 return HttpNotFound();
@@ -110,8 +106,8 @@ namespace DylanTaylorArt
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            GraphicCollection graphicCollection = db.GraphicCollections.Find(id);
-            db.GraphicCollections.Remove(graphicCollection);
+            Collection graphicCollection = db.Collections.Find(id);
+            db.Collections.Remove(graphicCollection);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

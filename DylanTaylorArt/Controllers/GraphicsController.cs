@@ -18,8 +18,8 @@ namespace DylanTaylorArt.Controllers
         // GET: Graphics
         public ActionResult Index()
         {
-            var graphics = db.Graphics.Include(c => c.Collection);
-            return View(graphics.ToList());
+            //var graphics = db.Graphics.Include(c => c.Collection);
+            return View(db.Graphics.ToList());
         }
 
         // GET: Graphics/Details/5

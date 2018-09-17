@@ -4,8 +4,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DylanTaylorArt.Models
 {
-    public class GraphicCollection
+    public class Collection
     {
+        [Key]
         public int GraphicCollectionID { get; set; }
 
         [Required, StringLength(60), Display(Name ="Collection")]

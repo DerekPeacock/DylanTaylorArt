@@ -19,22 +19,22 @@ namespace DylanTaylorArt.Migrations
 
         private void SeedCollections(GraphicDbContext context)
         {
-            context.GraphicCollections.AddOrUpdate(c => c.GraphicCollectionID,
-                new GraphicCollection
+            context.Collections.AddOrUpdate(c => c.GraphicCollectionID,
+                new Collection
                 {
                     GraphicCollectionID = 1,
                     CollectionName = "The Drawn Blank Series",
                     Artist = Artists.Bob_Dylan,
                     Year = 2008
                 },
-                new GraphicCollection
+                new Collection
                 {
                     GraphicCollectionID = 2,
                     CollectionName = "Collection",
                     Artist = Artists.Bob_Dylan,
                     Year = 2009
                 },
-                new GraphicCollection
+                new Collection
                 {
                     GraphicCollectionID = 3,
                     CollectionName = "Collection",

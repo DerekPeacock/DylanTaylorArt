@@ -11,6 +11,6 @@ namespace DylanTaylorArt.Models
         }
         public DbSet<Graphic> Graphics { get; set; }
 
-        public System.Data.Entity.DbSet<DylanTaylorArt.Models.GraphicCollection> GraphicCollections { get; set; }
+        public DbSet<Collection> Collections { get; set; }
     }
 }

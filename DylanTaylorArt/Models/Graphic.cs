@@ -1,5 +1,5 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 
 namespace DylanTaylorArt.Models
@@ -10,7 +10,7 @@ namespace DylanTaylorArt.Models
 
         public int GraphicID { get; set; }
 
-        [Required]
+        [Required, ForeignKey("Collection")]
         public int CollectionID { get; set; }
 
         [Required, StringLength(60)]
@@ -51,7 +51,7 @@ namespace DylanTaylorArt.Models
         [DataType(DataType.Currency)]
         public decimal Price { get; set; }
 
-        public virtual GraphicCollection Collection { get; set; }
+        public virtual Collection Collection { get; set; }
 
         public Graphic()
         {
