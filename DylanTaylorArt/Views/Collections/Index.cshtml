@@ -43,9 +43,9 @@
             @Html.DisplayFor(modelItem => item.ImagePath)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.GraphicCollectionID }, new { @class = "btn btn-success" }) 
-            @Html.ActionLink("Details", "Details", new { id = item.GraphicCollectionID }, new { @class = "btn btn-default" } ) 
-            @Html.ActionLink("Delete", "Delete", new { id=item.GraphicCollectionID }, new { @class = "btn btn-warning" })
+            @Html.ActionLink("Edit", "Edit", new { id=item.CollectionID }, new { @class = "btn btn-success" }) 
+            @Html.ActionLink("Details", "Details", new { id = item.CollectionID }, new { @class = "btn btn-default" } ) 
+            @Html.ActionLink("Delete", "Delete", new { id=item.CollectionID }, new { @class = "btn btn-warning" })
         </td>
     </tr>
 }

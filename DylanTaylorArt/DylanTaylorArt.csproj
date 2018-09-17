@@ -226,6 +226,10 @@
     <Compile Include="Migrations\201809161831132_ForeignKeyChange.Designer.cs">
       <DependentUpon>201809161831132_ForeignKeyChange.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809171052444_ChangeFK.cs" />
+    <Compile Include="Migrations\201809171052444_ChangeFK.Designer.cs">
+      <DependentUpon>201809171052444_ChangeFK.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Graphic.cs" />
@@ -351,6 +355,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201809161831132_ForeignKeyChange.resx">
       <DependentUpon>201809161831132_ForeignKeyChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809171052444_ChangeFK.resx">
+      <DependentUpon>201809171052444_ChangeFK.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

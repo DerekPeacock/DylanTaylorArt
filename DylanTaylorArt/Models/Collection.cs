@@ -7,7 +7,7 @@ namespace DylanTaylorArt.Models
     public class Collection
     {
         [Key]
-        public int GraphicCollectionID { get; set; }
+        public int CollectionID { get; set; }
 
         [Required, StringLength(60), Display(Name ="Collection")]
         public string CollectionName { get; set; }
