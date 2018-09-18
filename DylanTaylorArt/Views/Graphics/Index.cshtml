@@ -21,13 +21,16 @@
             @Html.DisplayNameFor(model => model.Title)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Status)
+            Copy No
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FramedWith)
         </th>
         <th class="text-center">
-            Carousel
+            Format
         </th>
         <th class="text-center">
-            Home Page
+            Portfolio
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Price)
@@ -38,27 +41,31 @@
 @foreach (var item in Model) {
     <tr>
         <td>
+            @Html.DisplayFor(modelItem => item.Collection.Year)
             @Html.DisplayFor(modelItem => item.Collection.CollectionName)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Title)
         </td>
+        <td class="text-center">
+            @Html.DisplayFor(modelItem => item.CopyNo)
+        </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Status)
+            @Html.DisplayFor(modelItem => item.FramedWith)
         </td>
         <td class="text-center">
-            @Html.DisplayFor(modelItem => item.DisplayInCarousel)
+            @Html.DisplayFor(modelItem => item.Format)
         </td>
         <td class="text-center">
-            @Html.DisplayFor(modelItem => item.DisplayOnHomePage)
+            @Html.DisplayFor(modelItem => item.Portfolio)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Price)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.GraphicID }, new { @class="btn btn-success"}) 
-            @Html.ActionLink("Details", "Details", new { id=item.GraphicID }, new { @class = "btn btn-default" }) 
-            @Html.ActionLink("Delete", "Delete", new { id=item.GraphicID }, new { @class = "btn btn-danger" })
+            @Html.ActionLink("Edit", "Edit", new { id = item.GraphicID }, new { @class = "btn btn-success" })
+            @Html.ActionLink("Details", "Details", new { id = item.GraphicID }, new { @class = "btn btn-default" })
+            @Html.ActionLink("Delete", "Delete", new { id = item.GraphicID }, new { @class = "btn btn-danger" })
         </td>
     </tr>
 }

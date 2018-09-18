@@ -20,7 +20,7 @@ namespace DylanTaylorArt.Models
         [StringLength(500)]
         public string Description { get; set; }
 
-        [StringLength(120)]
+        [StringLength(120), DataType(DataType.MultilineText)]
         public string ImagePath { get; set; }
 
         public virtual ICollection<Graphic> Graphics { get; set; }

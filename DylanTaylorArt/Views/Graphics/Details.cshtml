@@ -1,13 +1,15 @@
 ﻿@model DylanTaylorArt.Models.Graphic
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Graphic Details";
 }
+<section class="jumbotron">
+    <h1>Details Dylan Taylor Art</h1>
+    <h2>@Model.Title from @Model.Collection.CollectionName @Model.Collection.Year Collection</h2>
+</section>
 
-<h2>Details</h2>
-
+<h3>Graphic Details</h3>
 <div>
-    <h4>Graphic</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -27,6 +29,14 @@
         </dd>
 
         <dt>
+            @Html.DisplayNameFor(model => model.CopyNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CopyNo)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.Description)
         </dt>
 
@@ -34,13 +44,13 @@
             @Html.DisplayFor(model => model.Description)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.LargeImagePath)
-        </dt>
+        @*<dt>
+                @Html.DisplayNameFor(model => model.LargeImagePath)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.LargeImagePath)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.LargeImagePath)
+            </dd>*@
 
         <dt>
             @Html.DisplayNameFor(model => model.SmallImagePath)
@@ -123,20 +133,20 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.DisplayInCarousel)
+            @Html.DisplayNameFor(model => model.Portfolio)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.DisplayInCarousel)
+            @Html.DisplayFor(model => model.Portfolio)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.DisplayOnHomePage)
-        </dt>
+        @*<dt>
+                @Html.DisplayNameFor(model => model.DisplayOnHomePage)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.DisplayOnHomePage)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.DisplayOnHomePage)
+            </dd>*@
 
         <dt>
             @Html.DisplayNameFor(model => model.Price)
@@ -149,6 +159,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.GraphicID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Edit", "Edit", new { id = Model.GraphicID }, new { @class = "btn btn-success" }) |
+    @Html.ActionLink("<< Back to List", "Index", null, new { @class = "btn btn-default" })
 </p>

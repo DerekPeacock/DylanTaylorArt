@@ -13,10 +13,14 @@ namespace DylanTaylorArt.Models
         [Required, ForeignKey("Collection")]
         public int CollectionID { get; set; }
 
+        [Range(0, 296)]
+        public int CopyNo { get; set; }
+
         [Required, StringLength(60)]
         public string Title { get; set; }
 
         [StringLength(500)]
+        [DataType(DataType.MultilineText)]
         public string Description { get; set; }
 
         [StringLength(100)]
@@ -26,6 +30,8 @@ namespace DylanTaylorArt.Models
         public string SmallImagePath { get; set; }
 
         public GraphicFormats Format { get; set; }
+
+        public Portfolios Portfolio { get; set; }
 
         [StringLength(60)]
         public string Paper { get; set; }
@@ -44,12 +50,11 @@ namespace DylanTaylorArt.Models
 
         public FrameMaterial FramedWith { get; set; }
 
-        public bool DisplayInCarousel { get; set; }
-
         public bool DisplayOnHomePage { get; set; }
 
         [DataType(DataType.Currency)]
-        public decimal Price { get; set; }
+        [DisplayFormat(DataFormatString ="{0:C0}")]
+         public decimal Price { get; set; }
 
         public virtual Collection Collection { get; set; }
 
@@ -58,8 +63,8 @@ namespace DylanTaylorArt.Models
             Format = GraphicFormats.Unknown;
             Aspect = PictureAspects.Unknown;
             Status = GraphicStatus.ForSale;
+            FramedWith = FrameMaterial.Glass;
 
-            DisplayInCarousel = false;
             DisplayOnHomePage = false;
             Paper = "Hahnemuhle 350gm Museum Etching Paper";
         }
@@ -80,7 +85,9 @@ namespace DylanTaylorArt.Models
      public enum GraphicStatus
     {
         Unknown,
+        [Display(Name ="For Sale")]
         ForSale,
+        [Display(Name = "Under Offer")]
         UnderOffer,
         Sold,
         Withdrawn
@@ -92,12 +99,22 @@ namespace DylanTaylorArt.Models
         Standard, 
         Medium,
         Large,
-        Portfolios,
         Complete
     }
+
+    public enum Portfolios
+    {
+        None,
+        [Display(Name = "Part 1 of 4")]
+        Parts_1of4,
+        [Display(Name = "Set of 4")]
+        Setof_4
+    }
+
     public enum FrameMaterial
     {
         Unknown,
+        None,
         Glass,
         Perspex
     }

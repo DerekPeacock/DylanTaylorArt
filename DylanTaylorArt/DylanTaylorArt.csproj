@@ -230,6 +230,14 @@
     <Compile Include="Migrations\201809171052444_ChangeFK.Designer.cs">
       <DependentUpon>201809171052444_ChangeFK.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809181327418_AddCopyNo.cs" />
+    <Compile Include="Migrations\201809181327418_AddCopyNo.Designer.cs">
+      <DependentUpon>201809181327418_AddCopyNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809181804106_ModifyPortfolio.cs" />
+    <Compile Include="Migrations\201809181804106_ModifyPortfolio.Designer.cs">
+      <DependentUpon>201809181804106_ModifyPortfolio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Graphic.cs" />
@@ -358,6 +366,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201809171052444_ChangeFK.resx">
       <DependentUpon>201809171052444_ChangeFK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809181327418_AddCopyNo.resx">
+      <DependentUpon>201809181327418_AddCopyNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809181804106_ModifyPortfolio.resx">
+      <DependentUpon>201809181804106_ModifyPortfolio.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
