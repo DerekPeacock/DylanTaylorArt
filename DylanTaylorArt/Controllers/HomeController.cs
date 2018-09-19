@@ -29,14 +29,21 @@ namespace DylanTaylorArt.Controllers
 
         public ActionResult Gallery()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Your Gallery page.";
 
             return View();
         }
 
-        public ActionResult DylanArt()
+        public ActionResult Collections()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Your Collections page.";
+
+            return View();
+        }
+
+        public ActionResult Shows()
+        {
+            ViewBag.Message = "Your on show page.";
 
             return View();
         }

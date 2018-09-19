@@ -13,7 +13,7 @@ namespace DylanTaylorArt.Models
         [Required, ForeignKey("Collection")]
         public int CollectionID { get; set; }
 
-        [Range(0, 296)]
+        [Range(0, 296), Display(Name ="Copy No")]
         public int CopyNo { get; set; }
 
         [Required, StringLength(60)]
@@ -26,7 +26,7 @@ namespace DylanTaylorArt.Models
         [StringLength(100)]
         public string LargeImagePath { get; set; }
 
-        [StringLength(100)]
+        [StringLength(100), Display(Name ="Image Name")]
         public string SmallImagePath { get; set; }
 
         public GraphicFormats Format { get; set; }
@@ -48,6 +48,7 @@ namespace DylanTaylorArt.Models
 
         public GraphicStatus Status { get; set; }
 
+        [Display(Name ="Framed")]
         public FrameMaterial FramedWith { get; set; }
 
         public bool DisplayOnHomePage { get; set; }

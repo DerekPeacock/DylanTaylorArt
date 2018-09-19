@@ -328,6 +328,8 @@
     <Content Include="Views\Graphics\Details.cshtml" />
     <Content Include="Views\Graphics\Edit.cshtml" />
     <Content Include="Views\Graphics\Index.cshtml" />
+    <Content Include="Views\Home\Collections.cshtml" />
+    <Content Include="Views\Home\Shows.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
