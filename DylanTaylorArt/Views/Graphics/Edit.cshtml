@@ -23,7 +23,8 @@
     <div class="form-group">
         @Html.LabelFor(model => model.CollectionID, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.EditorFor(model => model.CollectionID, new { htmlAttributes = new { @class = "form-control" } })
+            @*@Html.EditorFor(model => model.CollectionID, new { htmlAttributes = new { @class = "form-control" } })*@
+            @Html.DropDownList("CollectionID", String.Empty);
             @Html.ValidationMessageFor(model => model.CollectionID, "", new { @class = "text-danger" })
         </div>
     </div>
@@ -150,7 +151,7 @@
         </div>
     </div>
 
-    @*<div class="form-group">
+    <div class="form-group">
             @Html.LabelFor(model => model.DisplayOnHomePage, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 <div class="checkbox">
@@ -158,7 +159,7 @@
                     @Html.ValidationMessageFor(model => model.DisplayOnHomePage, "", new { @class = "text-danger" })
                 </div>
             </div>
-        </div>*@
+        </div>
 
     <div class="form-group">
         @Html.LabelFor(model => model.Price, htmlAttributes: new { @class = "control-label col-md-2" })

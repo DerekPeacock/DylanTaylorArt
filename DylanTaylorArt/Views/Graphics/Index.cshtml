@@ -35,6 +35,12 @@
         <th>
             @Html.DisplayNameFor(model => model.Price)
         </th>
+        <th>
+            BDA Price
+        </th>
+        <th>
+            Castle Price
+        </th>
         <th></th>
     </tr>
 
@@ -42,7 +48,6 @@
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.Collection.Year)
-            @Html.DisplayFor(modelItem => item.Collection.CollectionName)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Title)
@@ -62,6 +67,13 @@
         <td>
             @Html.DisplayFor(modelItem => item.Price)
         </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BDA_Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CastlePrice)
+        </td>
+
         <td>
             @Html.ActionLink("Edit", "Edit", new { id = item.GraphicID }, new { @class = "btn btn-success" })
             @Html.ActionLink("Details", "Details", new { id = item.GraphicID }, new { @class = "btn btn-default" })

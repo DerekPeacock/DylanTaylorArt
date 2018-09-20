@@ -5,7 +5,7 @@
 }
 <section class="jumbotron">
     <h1>Details Dylan Taylor Art</h1>
-    <h2>@Model.Title from @Model.Collection.CollectionName @Model.Collection.Year Collection</h2>
+    <h2>@Model.Title from @Model.Collection.CollectionName Collection</h2>
 </section>
 
 <h3>Graphic Details</h3>
@@ -13,11 +13,12 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.CollectionID)
+            Collection
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.CollectionID)
+            @Html.DisplayFor(model => model.Collection.CollectionName)
         </dd>
 
         <dt>

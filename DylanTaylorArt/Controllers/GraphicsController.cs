@@ -48,7 +48,7 @@ namespace DylanTaylorArt.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "GraphicID,CollectionId,Title,Description,LargeImagePath,SmallImagePath,Format,Paper,Aspect,ImageWidth,ImageHeight,PaperWidth,PaperHeight,Status,FramedWith,DisplayInCarousel,DisplayOnHomePage,Price")] Graphic graphic)
+        public ActionResult Create([Bind(Include = "GraphicID,CollectionId,CopyNo,Title,Description,LargeImagePath,SmallImagePath,Format,Portfolio,Paper,Aspect,ImageWidth,ImageHeight,PaperWidth,PaperHeight,Status,FramedWith,DisplayOnHomePage,Price")] Graphic graphic)
         {
             if (ModelState.IsValid)
             {
@@ -72,6 +72,8 @@ namespace DylanTaylorArt.Controllers
             {
                 return HttpNotFound();
             }
+
+            PopulateDropdowns(graphic.CollectionID);
             return View(graphic);
         }
 
@@ -80,7 +82,7 @@ namespace DylanTaylorArt.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "GraphicID,CollectionId,Title,Description,LargeImagePath,SmallImagePath,Format,Paper,Aspect,ImageWidth,ImageHeight,PaperWidth,PaperHeight,Status,FramedWith,DisplayInCarousel,DisplayOnHomePage,Price")] Graphic graphic)
+        public ActionResult Edit([Bind(Include = "GraphicID,CollectionId,CopyNo,Title,Description,LargeImagePath,SmallImagePath,Format,Portfolio,Paper,Aspect,ImageWidth,ImageHeight,PaperWidth,PaperHeight,Status,FramedWith,DisplayOnHomePage,Price")] Graphic graphic)
         {
             if (ModelState.IsValid)
             {
@@ -115,6 +117,12 @@ namespace DylanTaylorArt.Controllers
             db.Graphics.Remove(graphic);
             db.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        protected void PopulateDropdowns(object selectedCollection = null)
+        {
+            var collections = db.Collections;
+            ViewBag.CollectionID = new SelectList(collections, "CollectionID", "CollectionName", selectedCollection);
         }
 
         protected override void Dispose(bool disposing)

@@ -14,13 +14,13 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.CollectionName)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.Artist)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Year)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CollectionName)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.ImagePath)
@@ -31,21 +31,21 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.CollectionName)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.Artist)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Year)
         </td>
         <td>
+            @Html.DisplayFor(modelItem => item.CollectionName)
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.ImagePath)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.CollectionID }, new { @class = "btn btn-success" }) 
-            @Html.ActionLink("Details", "Details", new { id = item.CollectionID }, new { @class = "btn btn-default" } ) 
-            @Html.ActionLink("Delete", "Delete", new { id=item.CollectionID }, new { @class = "btn btn-warning" })
+            @Html.ActionLink("Edit", "Edit", new { id = item.CollectionID }, new { @class = "btn btn-success" })
+            @Html.ActionLink("Details", "Details", new { id = item.CollectionID }, new { @class = "btn btn-default" })
+            @Html.ActionLink("Delete", "Delete", new { id = item.CollectionID }, new { @class = "btn btn-warning" })
         </td>
     </tr>
 }

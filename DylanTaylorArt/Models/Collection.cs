@@ -18,6 +18,7 @@ namespace DylanTaylorArt.Models
         public int Year { get; set; }
 
         [StringLength(500)]
+        [DataType(DataType.MultilineText)]
         public string Description { get; set; }
 
         [StringLength(120), DataType(DataType.MultilineText)]

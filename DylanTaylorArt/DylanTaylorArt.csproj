@@ -238,6 +238,10 @@
     <Compile Include="Migrations\201809181804106_ModifyPortfolio.Designer.cs">
       <DependentUpon>201809181804106_ModifyPortfolio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809200943596_AddPrices.cs" />
+    <Compile Include="Migrations\201809200943596_AddPrices.Designer.cs">
+      <DependentUpon>201809200943596_AddPrices.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Graphic.cs" />
@@ -258,7 +262,21 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\DB2008\Amagansett.png" />
+    <Content Include="Images\DB2008\DadsRestaurant.png" />
+    <Content Include="Images\DB2008\LakesideCabin.png" />
+    <Content Include="Images\DB2008\ManBridge.png" />
+    <Content Include="Images\DB2008\ManBridgeBrown.png" />
+    <Content Include="Images\DB2008\SideWalkCafe.png" />
+    <Content Include="Images\DB2008\TrainTracks.png" />
+    <Content Include="Images\DB2008\TrainTracksOrange.png" />
+    <Content Include="Images\DB2008\TrainTracksWhite.png" />
+    <Content Include="Images\DB2008\Truck.png" />
+    <Content Include="Images\DB2008\WomanInPub.png" />
+    <Content Include="Images\DB2008\WomanInPubPink.png" />
     <Content Include="Images\Logo.png" />
+    <Content Include="Images\Logo1.jpg" />
+    <Content Include="Images\Logo2.png" />
     <Content Include="Images\Print1.png" />
     <Content Include="Images\Print2.png" />
     <Content Include="Images\Print3.png" />
@@ -317,7 +335,6 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Gallery.cshtml" />
-    <Content Include="Views\Home\DylanArt.cshtml" />
     <Content Include="Views\Collections\Create.cshtml" />
     <Content Include="Views\Collections\Delete.cshtml" />
     <Content Include="Views\Collections\Details.cshtml" />
@@ -374,6 +391,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201809181804106_ModifyPortfolio.resx">
       <DependentUpon>201809181804106_ModifyPortfolio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809200943596_AddPrices.resx">
+      <DependentUpon>201809200943596_AddPrices.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
