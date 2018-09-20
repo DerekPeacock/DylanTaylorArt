@@ -53,15 +53,15 @@ namespace DylanTaylorArt.Models
 
         public bool DisplayOnHomePage { get; set; }
 
-        [DataType(DataType.Currency)]
+        [DataType(DataType.Currency), Display(Name ="Price (£)")]
         [DisplayFormat(DataFormatString ="{0:C0}")]
          public decimal Price { get; set; }
 
-        [DataType(DataType.Currency)]
+        [DataType(DataType.Currency), Display(Name ="BDA Price (£)")]
         [DisplayFormat(DataFormatString = "{0:C0}")]
         public decimal BDA_Price { get; set; }
 
-        [DataType(DataType.Currency)]
+        [DataType(DataType.Currency), Display(Name ="Castle Price (£)")]
         [DisplayFormat(DataFormatString = "{0:C0}")]
         public decimal CastlePrice { get; set; }
 

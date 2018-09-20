@@ -152,20 +152,36 @@
     </div>
 
     <div class="form-group">
-            @Html.LabelFor(model => model.DisplayOnHomePage, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                <div class="checkbox">
-                    @Html.EditorFor(model => model.DisplayOnHomePage)
-                    @Html.ValidationMessageFor(model => model.DisplayOnHomePage, "", new { @class = "text-danger" })
-                </div>
+        @Html.LabelFor(model => model.DisplayOnHomePage, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <div class="checkbox">
+                @Html.EditorFor(model => model.DisplayOnHomePage)
+                @Html.ValidationMessageFor(model => model.DisplayOnHomePage, "", new { @class = "text-danger" })
             </div>
         </div>
+    </div>
 
     <div class="form-group">
         @Html.LabelFor(model => model.Price, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
             @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
             @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.BDA_Price, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.BDA_Price, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.BDA_Price, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CastlePrice, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.CastlePrice, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.CastlePrice, "", new { @class = "text-danger" })
         </div>
     </div>
 

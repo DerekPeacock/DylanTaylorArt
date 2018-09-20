@@ -122,7 +122,8 @@ namespace DylanTaylorArt.Migrations
                     PaperWidth = 22,
                     PaperHeight = 27.5,
 
-                    Price = 2350m
+                    Price = 2350m,
+                    BDA_Price = 5250
                 },
                 new Graphic
                 {
@@ -142,7 +143,8 @@ namespace DylanTaylorArt.Migrations
                     PaperWidth = 22,
                     PaperHeight = 27.5,
 
-                    Price = 1750m
+                    Price = 1750m,
+                    BDA_Price = 3750m
                 },
                 new Graphic
                 {
@@ -162,7 +164,8 @@ namespace DylanTaylorArt.Migrations
                     PaperWidth = 22,
                     PaperHeight = 27.5,
 
-                    Price = 2450m
+                    Price = 2450m,
+                    BDA_Price = 5250m
                 },
                 new Graphic
                 {
@@ -182,7 +185,8 @@ namespace DylanTaylorArt.Migrations
                     PaperWidth = 28,
                     PaperHeight = 36,
 
-                    Price = 2800m
+                    Price = 2800m,
+                    BDA_Price = 7500m,
                 },
                 new Graphic
                 {
@@ -202,7 +206,8 @@ namespace DylanTaylorArt.Migrations
                     PaperWidth = 28,
                     PaperHeight = 36,
 
-                    Price = 4250m
+                    Price = 4250m,
+                    BDA_Price = 8500m
                 },
                 new Graphic
                 {
@@ -222,7 +227,8 @@ namespace DylanTaylorArt.Migrations
                     PaperWidth = 28,
                     PaperHeight = 36,
 
-                    Price = 9750m
+                    Price = 9750m,
+                    BDA_Price = 17500m
                 },
                 new Graphic
                 {
@@ -242,7 +248,8 @@ namespace DylanTaylorArt.Migrations
                     PaperWidth = 28,
                     PaperHeight = 36,
 
-                    Price = 7750m
+                    Price = 7750m,
+                    BDA_Price = 17500m
                 },
 
                 new Graphic
@@ -402,7 +409,8 @@ namespace DylanTaylorArt.Migrations
                     PaperWidth = 22,
                     PaperHeight = 27.5,
 
-                    Price = 2150m
+                    Price = 2150m,
+                    BDA_Price = 4000m
                 },
                 new Graphic
                 {
@@ -410,7 +418,7 @@ namespace DylanTaylorArt.Migrations
                     CollectionID = 2,
                     CopyNo = 0,
                     Title = "Three Chairs",
-                    SmallImagePath = "ThreeChairs",
+                    SmallImagePath = "3Chairs",
 
                     Format = GraphicFormats.Standard,
                     Portfolio = Portfolios.None,
@@ -427,7 +435,8 @@ namespace DylanTaylorArt.Migrations
                     PaperWidth = 22,
                     PaperHeight = 27.5,
 
-                    Price = 2600m
+                    Price = 2600m,
+                    BDA_Price = 4000m
                 },
                new Graphic
                {
@@ -452,7 +461,8 @@ namespace DylanTaylorArt.Migrations
                    PaperWidth = 22,
                    PaperHeight = 27.5,
 
-                   Price = 2850m
+                   Price = 2850m,
+                   BDA_Price = 5750m
                },
                 new Graphic
                 {
@@ -477,7 +487,8 @@ namespace DylanTaylorArt.Migrations
                     PaperWidth = 22,
                     PaperHeight = 27.5,
 
-                    Price = 2850m
+                    Price = 2850m,
+                    BDA_Price = 5750m
                 },
                new Graphic
                {
@@ -502,7 +513,8 @@ namespace DylanTaylorArt.Migrations
                    PaperWidth = 22,
                    PaperHeight = 27.5,
 
-                   Price = 2850m
+                   Price = 2850m,
+                   BDA_Price = 6000m
                });
         }
     }

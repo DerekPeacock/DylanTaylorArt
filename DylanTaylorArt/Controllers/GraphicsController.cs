@@ -48,7 +48,7 @@ namespace DylanTaylorArt.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "GraphicID,CollectionId,CopyNo,Title,Description,LargeImagePath,SmallImagePath,Format,Portfolio,Paper,Aspect,ImageWidth,ImageHeight,PaperWidth,PaperHeight,Status,FramedWith,DisplayOnHomePage,Price")] Graphic graphic)
+        public ActionResult Create([Bind(Include = "GraphicID,CollectionId,CopyNo,Title,Description,LargeImagePath,SmallImagePath,Format,Portfolio,Paper,Aspect,ImageWidth,ImageHeight,PaperWidth,PaperHeight,Status,FramedWith,DisplayOnHomePage,Price,BDA_Price,CastlePrice,CanvasPrice")] Graphic graphic)
         {
             if (ModelState.IsValid)
             {
@@ -82,7 +82,7 @@ namespace DylanTaylorArt.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "GraphicID,CollectionId,CopyNo,Title,Description,LargeImagePath,SmallImagePath,Format,Portfolio,Paper,Aspect,ImageWidth,ImageHeight,PaperWidth,PaperHeight,Status,FramedWith,DisplayOnHomePage,Price")] Graphic graphic)
+        public ActionResult Edit([Bind(Include = "GraphicID,CollectionId,CopyNo,Title,Description,LargeImagePath,SmallImagePath,Format,Portfolio,Paper,Aspect,ImageWidth,ImageHeight,PaperWidth,PaperHeight,Status,FramedWith,DisplayOnHomePage,Price,BDA_Price,CastlePrice,CanvasPrice")] Graphic graphic)
         {
             if (ModelState.IsValid)
             {
