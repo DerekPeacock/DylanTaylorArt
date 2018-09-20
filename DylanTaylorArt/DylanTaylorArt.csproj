@@ -262,6 +262,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\DB2009\3Chairs.png" />
+    <Content Include="Images\DB2009\Bicycle.png" />
+    <Content Include="Images\DB2009\RoseHill.png" />
+    <Content Include="Images\DB2009\Sunflowers.png" />
+    <Content Include="Images\DB2009\TruckStop.png" />
     <Content Include="Images\DB2008\Amagansett.png" />
     <Content Include="Images\DB2008\DadsRestaurant.png" />
     <Content Include="Images\DB2008\LakesideCabin.png" />
