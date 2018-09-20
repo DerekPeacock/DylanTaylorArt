@@ -22,6 +22,11 @@ namespace DylanTaylorArt.Controllers
             return View(db.Graphics.ToList());
         }
 
+        public ActionResult Prices()
+        {
+            return View(db.Graphics.ToList());
+        }
+
         // GET: Graphics/Details/5
         public ActionResult Details(int? id)
         {

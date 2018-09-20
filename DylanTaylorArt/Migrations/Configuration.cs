@@ -123,7 +123,8 @@ namespace DylanTaylorArt.Migrations
                     PaperHeight = 27.5,
 
                     Price = 2350m,
-                    BDA_Price = 5250
+                    BDA_Price = 5250,
+                    CanvasPrice = 3500m
                 },
                 new Graphic
                 {
@@ -144,7 +145,8 @@ namespace DylanTaylorArt.Migrations
                     PaperHeight = 27.5,
 
                     Price = 1750m,
-                    BDA_Price = 3750m
+                    BDA_Price = 3750m,
+                    CanvasPrice = 2450m
                 },
                 new Graphic
                 {
@@ -165,7 +167,8 @@ namespace DylanTaylorArt.Migrations
                     PaperHeight = 27.5,
 
                     Price = 2450m,
-                    BDA_Price = 5250m
+                    BDA_Price = 5250m,
+                    CanvasPrice = 3500m
                 },
                 new Graphic
                 {
@@ -187,6 +190,7 @@ namespace DylanTaylorArt.Migrations
 
                     Price = 2800m,
                     BDA_Price = 7500m,
+                    CanvasPrice = 4500m
                 },
                 new Graphic
                 {
@@ -207,7 +211,8 @@ namespace DylanTaylorArt.Migrations
                     PaperHeight = 36,
 
                     Price = 4250m,
-                    BDA_Price = 8500m
+                    BDA_Price = 8500m,
+                    CanvasPrice = 3500m
                 },
                 new Graphic
                 {
@@ -228,7 +233,8 @@ namespace DylanTaylorArt.Migrations
                     PaperHeight = 36,
 
                     Price = 9750m,
-                    BDA_Price = 17500m
+                    BDA_Price = 17500m,
+                    CanvasPrice = 10000m
                 },
                 new Graphic
                 {
@@ -295,7 +301,8 @@ namespace DylanTaylorArt.Migrations
                     PaperWidth = 22,
                     PaperHeight = 27.5,
 
-                    Price = 7750m
+                    Price = 7750m,
+                    CanvasPrice = 2950m
                 },
                 new Graphic
                 {
@@ -316,7 +323,8 @@ namespace DylanTaylorArt.Migrations
                     PaperWidth = 28,
                     PaperHeight = 36,
 
-                    Price = 2400m
+                    Price = 2400m,
+                    CanvasPrice = 2950m
                 },
 
                 new Graphic
@@ -339,7 +347,8 @@ namespace DylanTaylorArt.Migrations
                     PaperHeight = 27.5,
 
                     Price = 18000m,
-                    BDA_Price = 40000m
+                    BDA_Price = 40000m,
+                    CanvasPrice = 22500
                 },
                 new Graphic
                 {
@@ -410,7 +419,8 @@ namespace DylanTaylorArt.Migrations
                     PaperHeight = 27.5,
 
                     Price = 2150m,
-                    BDA_Price = 4000m
+                    BDA_Price = 4000m,
+                    CanvasPrice = 3200m
                 },
                 new Graphic
                 {
@@ -436,7 +446,8 @@ namespace DylanTaylorArt.Migrations
                     PaperHeight = 27.5,
 
                     Price = 2600m,
-                    BDA_Price = 4000m
+                    BDA_Price = 4000m,
+                    CanvasPrice = 3200m
                 },
                new Graphic
                {
@@ -462,7 +473,8 @@ namespace DylanTaylorArt.Migrations
                    PaperHeight = 27.5,
 
                    Price = 2850m,
-                   BDA_Price = 5750m
+                   BDA_Price = 5750m,
+                   CanvasPrice = 4000m
                },
                 new Graphic
                 {
@@ -514,8 +526,206 @@ namespace DylanTaylorArt.Migrations
                    PaperHeight = 27.5,
 
                    Price = 2850m,
-                   BDA_Price = 6000m
-               });
+                   BDA_Price = 6000m,
+                   CanvasPrice = 4000m
+               },
+               new Graphic
+               {
+                   GraphicID = 19,
+                   CollectionID = 3,
+                   CopyNo = 0,
+                   Title = "Sunday Afternoon",
+                   SmallImagePath = "SunAfternoon",
+
+                   Format = GraphicFormats.Standard,
+                   Portfolio = Portfolios.None,
+                   Aspect = PictureAspects.Portrait,
+                   Status = GraphicStatus.ForSale,
+
+                   FramedWith = FrameMaterial.Glass,
+
+                   DisplayOnHomePage = false,
+
+                   ImageWidth = 0,
+                   ImageHeight = 0,
+
+                   PaperWidth = 22,
+                   PaperHeight = 27.5,
+
+                   Price = 3000m,
+                   BDA_Price = 0,
+                   CanvasPrice = 0,
+                   CastlePrice = 0
+               },
+               new Graphic
+               {
+                   GraphicID = 20,
+                   CollectionID = 3,
+                   CopyNo = 0,
+                   Title = "Fisherman",
+                   SmallImagePath = "Fisherman",
+
+                   Format = GraphicFormats.Standard,
+                   Portfolio = Portfolios.None,
+                   Aspect = PictureAspects.Portrait,
+                   Status = GraphicStatus.ForSale,
+
+                   FramedWith = FrameMaterial.Glass,
+
+                   DisplayOnHomePage = false,
+
+                   ImageWidth = 0,
+                   ImageHeight = 0,
+
+                   PaperWidth = 22,
+                   PaperHeight = 27.5,
+
+                   Price = 2150m,
+                   BDA_Price = 0,
+                   CanvasPrice = 0,
+                   CastlePrice = 0
+               },
+               new Graphic
+               {
+                   GraphicID = 21,
+                   CollectionID = 3,
+                   CopyNo = 0,
+                   Title = "Rose on Hillside",
+                   SmallImagePath = "RoseHill",
+
+                   Format = GraphicFormats.Standard,
+                   Portfolio = Portfolios.None,
+                   Aspect = PictureAspects.Portrait,
+                   Status = GraphicStatus.ForSale,
+
+                   FramedWith = FrameMaterial.Glass,
+
+                   DisplayOnHomePage = false,
+
+                   ImageWidth = 0,
+                   ImageHeight = 0,
+
+                   PaperWidth = 22,
+                   PaperHeight = 27.5,
+
+                   Price = 2850m,
+                   BDA_Price = 0,
+                   CanvasPrice = 0,
+                   CastlePrice = 0
+               },
+               new Graphic
+               {
+                   GraphicID = 22,
+                   CollectionID = 3,
+                   CopyNo = 0,
+                   Title = "Cassandra",
+                   SmallImagePath = "Cassandra",
+
+                   Format = GraphicFormats.Standard,
+                   Portfolio = Portfolios.None,
+                   Aspect = PictureAspects.Portrait,
+                   Status = GraphicStatus.ForSale,
+
+                   FramedWith = FrameMaterial.Glass,
+
+                   DisplayOnHomePage = false,
+
+                   ImageWidth = 0,
+                   ImageHeight = 0,
+
+                   PaperWidth = 22,
+                   PaperHeight = 27.5,
+
+                   Price = 1100m,
+                   BDA_Price = 0,
+                   CanvasPrice = 0,
+                   CastlePrice = 0
+               },
+               new Graphic
+               {
+                   GraphicID = 23,
+                   CollectionID = 3,
+                   CopyNo = 0,
+                   Title = "Train Tracks",
+                   SmallImagePath = "TrainTracks4",
+
+                   Format = GraphicFormats.Standard,
+                   Portfolio = Portfolios.Setof_4,
+                   Aspect = PictureAspects.Portrait,
+                   Status = GraphicStatus.ForSale,
+
+                   FramedWith = FrameMaterial.Glass,
+
+                   DisplayOnHomePage = false,
+
+                   ImageWidth = 0,
+                   ImageHeight = 0,
+
+                   PaperWidth = 22,
+                   PaperHeight = 27.5,
+
+                   Price = 16000m,
+                   BDA_Price = 0,
+                   CanvasPrice = 0,
+                   CastlePrice = 0
+               },
+               new Graphic
+               {
+                   GraphicID = 24,
+                   CollectionID = 3,
+                   CopyNo = 0,
+                   Title = "Train Tracks -White",
+                   SmallImagePath = "TrainTracksWhite",
+
+                   Format = GraphicFormats.Standard,
+                   Portfolio = Portfolios.Parts_1of4,
+                   Aspect = PictureAspects.Portrait,
+                   Status = GraphicStatus.ForSale,
+
+                   FramedWith = FrameMaterial.Glass,
+
+                   DisplayOnHomePage = false,
+
+                   ImageWidth = 0,
+                   ImageHeight = 0,
+
+                   PaperWidth = 22,
+                   PaperHeight = 27.5,
+
+                   Price = 4500m,
+                   BDA_Price = 0,
+                   CanvasPrice = 0,
+                   CastlePrice = 0
+               },
+               new Graphic
+               {
+                   GraphicID = 25,
+                   CollectionID = 3,
+                   CopyNo = 0,
+                   Title = "Sidewalk Cafe",
+                   SmallImagePath = "SideWalkCafe",
+
+                   Format = GraphicFormats.Standard,
+                   Portfolio = Portfolios.None,
+                   Aspect = PictureAspects.Portrait,
+                   Status = GraphicStatus.ForSale,
+
+                   FramedWith = FrameMaterial.Glass,
+
+                   DisplayOnHomePage = false,
+
+                   ImageWidth = 0,
+                   ImageHeight = 0,
+
+                   PaperWidth = 22,
+                   PaperHeight = 27.5,
+
+                   Price = 2100m,
+                   BDA_Price = 0,
+                   CanvasPrice = 0,
+                   CastlePrice = 0
+               }
+               );
         }
     }
 }

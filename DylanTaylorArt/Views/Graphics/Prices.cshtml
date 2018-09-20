@@ -6,28 +6,17 @@
 
 <section class="jumbotron">
     <h1>Dylan Taylor Art</h1>
-    <h2>List of all Bob Dylan Graphics</h2>
+    <h2>Price Comparison of Graphics</h2>
     @Html.ActionLink("Collections", "Index", "Collections", null, new { @class = "btn btn-info" })
     @Html.ActionLink("Graphics", "Index", null, new { @class = "btn btn-info" })
     @Html.ActionLink("Prices", "Prices", null, new { @class = "btn btn-info" })
+
 </section>
 
-<p>
-    @Html.ActionLink("Add New Graphic", "Create", null, new { @class = "btn btn-success" })
-</p>
-<table class="table table-bordered table-hover table-striped">
+<table class="table">
     <tr>
         <th>
-            Collection
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th>
-            Copy No
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.FramedWith)
         </th>
         <th class="text-center">
             Format
@@ -36,26 +25,28 @@
             Portfolio
         </th>
         <th>
-            Price
+            TDA Price
+        </th>
+        <th>
+            BDA Price
+        </th>
+        <th>
+            Castle Price
+        </th>
+        <th>
+            Canvas Price
         </th>
         <th>
             Action
         </th>
     </tr>
 
-@foreach (var item in Model) {
+    @foreach (var item in Model)
+    {
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.Collection.Year)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td class="text-center">
-            @Html.DisplayFor(modelItem => item.CopyNo)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.FramedWith)
         </td>
         <td class="text-center">
             @Html.DisplayFor(modelItem => item.Format)
@@ -64,15 +55,25 @@
             @Html.DisplayFor(modelItem => item.Portfolio)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Price);
+            <strong>
+                @Html.DisplayFor(modelItem => item.Price);
+            </strong>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BDA_Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CastlePrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CanvasPrice)
         </td>
 
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.GraphicID }, new { @class = "btn btn-success" })
-            @Html.ActionLink("Details", "Details", new { id = item.GraphicID }, new { @class = "btn btn-default" })
-            @Html.ActionLink("Delete", "Delete", new { id = item.GraphicID }, new { @class = "btn btn-danger" })
+            @Html.ActionLink("Edit Prices", "EditPrices", new { id = item.GraphicID }, new { @class = "btn btn-success" })
         </td>
     </tr>
-}
+    }
 
 </table>
+
