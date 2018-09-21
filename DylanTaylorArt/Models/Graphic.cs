@@ -121,7 +121,11 @@ namespace DylanTaylorArt.Models
         [Display(Name = "Part 1 of 4")]
         Parts_1of4,
         [Display(Name = "Set of 4")]
-        Setof_4
+        Setof_4,
+        [Display(Name = "Set of 3")]
+        Setof_3,
+        [Display(Name = "Part 1 of 3")]
+        Parts_1of3
     }
 
     public enum FrameMaterial

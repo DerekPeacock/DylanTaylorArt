@@ -700,7 +700,7 @@ namespace DylanTaylorArt.Migrations
                new Graphic
                {
                    GraphicID = 25,
-                   CollectionID = 3,
+                   CollectionID = 4,
                    CopyNo = 0,
                    Title = "Sidewalk Cafe",
                    SmallImagePath = "SideWalkCafe",
@@ -724,8 +724,427 @@ namespace DylanTaylorArt.Migrations
                    BDA_Price = 0,
                    CanvasPrice = 0,
                    CastlePrice = 0
-               }
-               );
+               },
+               new Graphic
+               {
+                   GraphicID = 26,
+                   CollectionID = 5,
+                   CopyNo = 0,
+                   Title = "House on Union Street",
+                   SmallImagePath = "HouseOnUnionStreet",
+
+                   Format = GraphicFormats.Standard,
+                   Portfolio = Portfolios.None,
+                   Aspect = PictureAspects.Portrait,
+                   Status = GraphicStatus.ForSale,
+
+                   FramedWith = FrameMaterial.Glass,
+
+                   DisplayOnHomePage = false,
+
+                   ImageWidth = 0,
+                   ImageHeight = 0,
+
+                   PaperWidth = 22,
+                   PaperHeight = 27.5,
+
+                   Price = 2850m,
+                   BDA_Price = 0,
+                   CanvasPrice = 0,
+                   CastlePrice = 0
+               },
+               new Graphic
+               {
+                   GraphicID = 27,
+                   CollectionID = 5,
+                   CopyNo = 0,
+                   Title = "Man on Bridge",
+                   SmallImagePath = "ManBridge",
+
+                   Format = GraphicFormats.Standard,
+                   Portfolio = Portfolios.None,
+                   Aspect = PictureAspects.Portrait,
+                   Status = GraphicStatus.ForSale,
+
+                   FramedWith = FrameMaterial.Glass,
+
+                   DisplayOnHomePage = false,
+
+                   ImageWidth = 0,
+                   ImageHeight = 0,
+
+                   PaperWidth = 22,
+                   PaperHeight = 27.5,
+
+                   Price = 3000m,
+                   BDA_Price = 0,
+                   CanvasPrice = 0,
+                   CastlePrice = 0
+               },
+               new Graphic
+               {
+                   GraphicID = 28,
+                   CollectionID = 9,
+                   CopyNo = 0,
+                   Title = "Train Tracks - White",
+                   SmallImagePath = "TrainTracksWhite",
+
+                   Format = GraphicFormats.Medium,
+                   Portfolio = Portfolios.None,
+                   Aspect = PictureAspects.Portrait,
+                   Status = GraphicStatus.ForSale,
+
+                   FramedWith = FrameMaterial.Glass,
+
+                   DisplayOnHomePage = false,
+
+                   ImageWidth = 0,
+                   ImageHeight = 0,
+
+                   PaperWidth = 28,
+                   PaperHeight = 36,
+
+                   Price = 6000m,
+                   BDA_Price = 15000,
+                   CanvasPrice = 0,
+                   CastlePrice = 0
+               },
+               new Graphic
+               {
+                   GraphicID = 29,
+                   CollectionID = 9,
+                   CopyNo = 0,
+                   Title = "Train Tracks - Blue",
+                   SmallImagePath = "TrainTracksBlue",
+
+                   Format = GraphicFormats.Medium,
+                   Portfolio = Portfolios.None,
+                   Aspect = PictureAspects.Portrait,
+                   Status = GraphicStatus.ForSale,
+
+                   FramedWith = FrameMaterial.Glass,
+
+                   DisplayOnHomePage = true,
+
+                   ImageWidth = 0,
+                   ImageHeight = 0,
+
+                   PaperWidth = 28,
+                   PaperHeight = 36,
+
+                   Price = 6850m,
+                   BDA_Price = 15000,
+                   CanvasPrice = 0,
+                   CastlePrice = 0
+               },
+               new Graphic
+               {
+                   GraphicID = 30,
+                   CollectionID = 9,
+                   CopyNo = 0,
+                   Title = "Train Tracks - Green",
+                   SmallImagePath = "TrainTracksGreen",
+
+                   Format = GraphicFormats.Medium,
+                   Portfolio = Portfolios.None,
+                   Aspect = PictureAspects.Portrait,
+                   Status = GraphicStatus.ForSale,
+
+                   FramedWith = FrameMaterial.Glass,
+
+                   DisplayOnHomePage = false,
+
+                   ImageWidth = 0,
+                   ImageHeight = 0,
+
+                   PaperWidth = 28,
+                   PaperHeight = 36,
+
+                   Price = 5500m,
+                   BDA_Price = 15000,
+                   CanvasPrice = 0,
+                   CastlePrice = 0
+               },
+               new Graphic
+               {
+                   GraphicID = 31,
+                   CollectionID = 9,
+                   CopyNo = 0,
+                   Title = "Train Tracks - Red",
+                   SmallImagePath = "TrainTracksRed",
+
+                   Format = GraphicFormats.Medium,
+                   Portfolio = Portfolios.None,
+                   Aspect = PictureAspects.Portrait,
+                   Status = GraphicStatus.ForSale,
+
+                   FramedWith = FrameMaterial.Glass,
+
+                   DisplayOnHomePage = false,
+
+                   ImageWidth = 0,
+                   ImageHeight = 0,
+
+                   PaperWidth = 28,
+                   PaperHeight = 36,
+
+                   Price = 6500m,
+                   BDA_Price = 15000,
+                   CanvasPrice = 0,
+                   CastlePrice = 0
+               },
+               new Graphic
+               {
+                   GraphicID = 32,
+                   CollectionID = 6,
+                   CopyNo = 0,
+                   Title = "Corner Flat",
+                   SmallImagePath = "CornerFlat",
+
+                   Format = GraphicFormats.Standard,
+                   Portfolio = Portfolios.None,
+                   Aspect = PictureAspects.Landscape,
+                   Status = GraphicStatus.ForSale,
+
+                   FramedWith = FrameMaterial.Glass,
+
+                   DisplayOnHomePage = false,
+
+                   ImageWidth = 0,
+                   ImageHeight = 0,
+
+                   PaperWidth = 27.5,
+                   PaperHeight = 22,
+
+                   Price = 1750m,
+                   BDA_Price = 2000,
+                   CanvasPrice = 0,
+                   CastlePrice = 0
+               },
+              new Graphic
+              {
+                  GraphicID = 33,
+                  CollectionID = 6,
+                  CopyNo = 0,
+                  Title = "Bicycle",
+                  SmallImagePath = "Bicycle",
+
+                  Format = GraphicFormats.Medium,
+                  Portfolio = Portfolios.None,
+                  Aspect = PictureAspects.Portrait,
+                  Status = GraphicStatus.ForSale,
+
+                  FramedWith = FrameMaterial.Glass,
+
+                  DisplayOnHomePage = false,
+
+                  ImageWidth = 0,
+                  ImageHeight = 0,
+
+                  PaperWidth = 28,
+                  PaperHeight = 36,
+
+                  Price = 2300m,
+                  BDA_Price = 3000,
+                  CanvasPrice = 0,
+                  CastlePrice = 0
+              },
+              new Graphic
+              {
+                  GraphicID = 34,
+                  CollectionID = 7,
+                  CopyNo = 0,
+                  Title = "Cityscape",
+                  SmallImagePath = "Cityscape",
+
+                  Format = GraphicFormats.Standard,
+                  Portfolio = Portfolios.None,
+                  Aspect = PictureAspects.Portrait,
+                  Status = GraphicStatus.ForSale,
+
+                  FramedWith = FrameMaterial.Glass,
+
+                  DisplayOnHomePage = true,
+
+                  ImageWidth = 0,
+                  ImageHeight = 0,
+
+                  PaperWidth = 28,
+                  PaperHeight = 36,
+
+                  Price = 3250m,
+                  BDA_Price = 4750,
+                  CanvasPrice = 0,
+                  CastlePrice = 0
+              },
+              new Graphic
+              {
+                  GraphicID = 35,
+                  CollectionID = 7,
+                  CopyNo = 0,
+                  Title = "Train Tracks - Red",
+                  SmallImagePath = "TrainTracksRed",
+
+                  Format = GraphicFormats.Medium,
+                  Portfolio = Portfolios.None,
+                  Aspect = PictureAspects.Portrait,
+                  Status = GraphicStatus.ForSale,
+
+                  FramedWith = FrameMaterial.Glass,
+
+                  DisplayOnHomePage = true,
+
+                  ImageWidth = 0,
+                  ImageHeight = 0,
+
+                  PaperWidth = 28,
+                  PaperHeight =36,
+
+                  Price = 5700m,
+                  BDA_Price = 10000,
+                  CanvasPrice = 0,
+                  CastlePrice = 0
+              },
+              new Graphic
+              {
+                  GraphicID = 36,
+                  CollectionID = 10,
+                  CopyNo = 0,
+                  Title = "Portfolio - Set of 3",
+                  SmallImagePath = "Portfolio3",
+
+                  Format = GraphicFormats.Standard,
+                  Portfolio = Portfolios.Setof_3,
+                  Aspect = PictureAspects.Unknown,
+                  Status = GraphicStatus.ForSale,
+
+                  FramedWith = FrameMaterial.Glass,
+
+                  DisplayOnHomePage = false,
+
+                  ImageWidth = 0,
+                  ImageHeight = 0,
+
+                  PaperWidth = 26,
+                  PaperHeight = 30,
+
+                  Price = 4500m,
+                  BDA_Price = 7200,
+                  CanvasPrice = 0,
+                  CastlePrice = 0
+              },
+              new Graphic
+              {
+                  GraphicID = 37,
+                  CollectionID = 10,
+                  CopyNo = 0,
+                  Title = "Favela Villa Broncos",
+                  SmallImagePath = "FavelaVilla",
+
+                  Format = GraphicFormats.Standard,
+                  Portfolio = Portfolios.Parts_1of3,
+                  Aspect = PictureAspects.Landscape,
+                  Status = GraphicStatus.ForSale,
+
+                  FramedWith = FrameMaterial.Glass,
+
+                  DisplayOnHomePage = false,
+
+                  ImageWidth = 0,
+                  ImageHeight = 0,
+
+                  PaperWidth = 26,
+                  PaperHeight = 30,
+
+                  Price = 2500m,
+                  BDA_Price = 2950,
+                  CanvasPrice = 0,
+                  CastlePrice = 0
+              },
+              new Graphic
+              {
+                  GraphicID = 38,
+                  CollectionID = 10,
+                  CopyNo = 0,
+                  Title = "Portfolio - Set of 3",
+                  SmallImagePath = "Portfolio3",
+
+                  Format = GraphicFormats.Standard,
+                  Portfolio = Portfolios.Setof_3,
+                  Aspect = PictureAspects.Unknown,
+                  Status = GraphicStatus.ForSale,
+
+                  FramedWith = FrameMaterial.None,
+
+                  DisplayOnHomePage = false,
+
+                  ImageWidth = 0,
+                  ImageHeight = 0,
+
+                  PaperWidth = 26,
+                  PaperHeight = 30,
+
+                  Price = 3800m,
+                  BDA_Price = 7200,
+                  CanvasPrice = 0,
+                  CastlePrice = 0
+              },
+              new Graphic
+              {
+                  GraphicID = 39,
+                  CollectionID = 8,
+                  CopyNo = 0,
+                  Title = "Woman in Red Lion Pub",
+                  SmallImagePath = "WomanPub",
+
+                  Format = GraphicFormats.Standard,
+                  Portfolio = Portfolios.None,
+                  Aspect = PictureAspects.Portrait,
+                  Status = GraphicStatus.ForSale,
+
+                  FramedWith = FrameMaterial.None,
+
+                  DisplayOnHomePage = false,
+
+                  ImageWidth = 0,
+                  ImageHeight = 0,
+
+                  PaperWidth = 22,
+                  PaperHeight = 27.5,
+
+                  Price = 2250m,
+                  BDA_Price = 3500,
+                  CanvasPrice = 0,
+                  CastlePrice = 0
+              },
+             new Graphic
+             {
+                 GraphicID = 40,
+                 CollectionID = 8,
+                 CopyNo = 0,
+                 Title = "Sunday Afternoon",
+                 SmallImagePath = "Sunday",
+
+                 Format = GraphicFormats.Standard,
+                 Portfolio = Portfolios.None,
+                 Aspect = PictureAspects.Portrait,
+                 Status = GraphicStatus.ForSale,
+
+                 FramedWith = FrameMaterial.None,
+
+                 DisplayOnHomePage = false,
+
+                 ImageWidth = 0,
+                 ImageHeight = 0,
+
+                 PaperWidth = 22,
+                 PaperHeight = 27.5,
+
+                 Price = 2250m,
+                 BDA_Price = 3500,
+                 CanvasPrice = 0,
+                 CastlePrice = 0
+             });
         }
     }
 }
