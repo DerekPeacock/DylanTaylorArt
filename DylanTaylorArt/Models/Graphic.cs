@@ -69,6 +69,11 @@ namespace DylanTaylorArt.Models
         [DisplayFormat(DataFormatString = "{0:C0}")]
         public decimal CanvasPrice { get; set; }
 
+        [DataType(DataType.Currency)]
+        [DisplayFormat(DataFormatString = "{0:C0}")]
+        public decimal CFA_Price { get; set; }
+
+
         public virtual Collection Collection { get; set; }
 
         public Graphic()

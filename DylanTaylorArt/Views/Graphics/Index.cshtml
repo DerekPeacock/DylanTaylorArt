@@ -45,7 +45,7 @@
 
 @foreach (var item in Model) {
     <tr>
-        <td>
+        <td class="text-center">
             @Html.DisplayFor(modelItem => item.Collection.Year)
         </td>
         <td>
@@ -64,7 +64,9 @@
             @Html.DisplayFor(modelItem => item.Portfolio)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Price);
+            <strong>
+                @Html.DisplayFor(modelItem => item.Price)
+            </strong>
         </td>
 
         <td>

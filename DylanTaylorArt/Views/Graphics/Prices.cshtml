@@ -43,6 +43,12 @@
             </a>
         </th>
         <th>
+            <a href="http://www.chelmerfineart.com/showArtistWork.asp?a=5842" target="_blank">
+                Chelmer Price
+            </a>
+        </th>
+
+        <th>
             Action
         </th>
     </tr>
@@ -62,7 +68,7 @@
         </td>
         <td>
             <strong>
-                @Html.DisplayFor(modelItem => item.Price);
+                @Html.DisplayFor(modelItem => item.Price)
             </strong>
         </td>
         <td>
@@ -73,6 +79,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.CanvasPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CFA_Price)
         </td>
 
         <td>

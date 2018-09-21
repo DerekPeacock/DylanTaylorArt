@@ -242,6 +242,10 @@
     <Compile Include="Migrations\201809200943596_AddPrices.Designer.cs">
       <DependentUpon>201809200943596_AddPrices.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809211337389_AddChelmerPrice.cs" />
+    <Compile Include="Migrations\201809211337389_AddChelmerPrice.Designer.cs">
+      <DependentUpon>201809211337389_AddChelmerPrice.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Graphic.cs" />
@@ -353,6 +357,7 @@
     <Content Include="Views\Home\Collections.cshtml" />
     <Content Include="Views\Home\Shows.cshtml" />
     <Content Include="Views\Graphics\Prices.cshtml" />
+    <Content Include="Views\Graphics\EditPrices.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -401,6 +406,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201809200943596_AddPrices.resx">
       <DependentUpon>201809200943596_AddPrices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809211337389_AddChelmerPrice.resx">
+      <DependentUpon>201809211337389_AddChelmerPrice.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

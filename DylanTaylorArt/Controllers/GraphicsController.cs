@@ -19,12 +19,12 @@ namespace DylanTaylorArt.Controllers
         public ActionResult Index()
         {
             //var graphics = db.Graphics.Include(c => c.Collection);
-            return View(db.Graphics.ToList());
+            return View(db.Graphics.OrderBy(y => y.Collection.Year).ToList());
         }
 
         public ActionResult Prices()
         {
-            return View(db.Graphics.ToList());
+            return View(db.Graphics.OrderBy(y => y.Collection.Year).ToList());
         }
 
         // GET: Graphics/Details/5
@@ -45,7 +45,9 @@ namespace DylanTaylorArt.Controllers
         // GET: Graphics/Create
         public ActionResult Create()
         {
-            return View();
+            Graphic graphic = new Graphic();
+            PopulateDropdowns(1);
+            return View(graphic);
         }
 
         // POST: Graphics/Create
@@ -94,6 +96,40 @@ namespace DylanTaylorArt.Controllers
                 db.Entry(graphic).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
+            }
+            return View(graphic);
+        }
+
+
+        // GET: Graphics/Edit/5
+        public ActionResult EditPrices(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Graphic graphic = db.Graphics.Find(id);
+            if (graphic == null)
+            {
+                return HttpNotFound();
+            }
+
+            PopulateDropdowns(graphic.CollectionID);
+            return View(graphic);
+        }
+
+        // POST: Graphics/Edit/5
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult EditPrices([Bind(Include = "GraphicID,CollectionId,Title,Description,Format,Status,FramedWith,Price,BDA_Price,CastlePrice,CanvasPrice,CFA_Price")] Graphic graphic)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Entry(graphic).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Prices");
             }
             return View(graphic);
         }

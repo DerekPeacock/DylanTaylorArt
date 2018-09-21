@@ -124,6 +124,7 @@ namespace DylanTaylorArt.Migrations
 
                     Price = 2350m,
                     BDA_Price = 5250,
+                    CastlePrice = 5500m,
                     CanvasPrice = 3500m
                 },
                 new Graphic
@@ -146,6 +147,7 @@ namespace DylanTaylorArt.Migrations
 
                     Price = 1750m,
                     BDA_Price = 3750m,
+                    CastlePrice = 4000m,
                     CanvasPrice = 2450m
                 },
                 new Graphic
@@ -168,6 +170,7 @@ namespace DylanTaylorArt.Migrations
 
                     Price = 2450m,
                     BDA_Price = 5250m,
+                    CastlePrice = 5500m,
                     CanvasPrice = 3500m
                 },
                 new Graphic
@@ -190,6 +193,7 @@ namespace DylanTaylorArt.Migrations
 
                     Price = 2800m,
                     BDA_Price = 7500m,
+                    CastlePrice = 7850m,
                     CanvasPrice = 4500m
                 },
                 new Graphic
@@ -212,6 +216,7 @@ namespace DylanTaylorArt.Migrations
 
                     Price = 4250m,
                     BDA_Price = 8500m,
+                    CastlePrice = 8850m,
                     CanvasPrice = 3500m
                 },
                 new Graphic
@@ -234,6 +239,7 @@ namespace DylanTaylorArt.Migrations
 
                     Price = 9750m,
                     BDA_Price = 17500m,
+                    CastlePrice = 17750m,
                     CanvasPrice = 10000m
                 },
                 new Graphic
@@ -279,7 +285,8 @@ namespace DylanTaylorArt.Migrations
                     PaperHeight = 27.5,
 
                     Price = 9500m,
-                    BDA_Price = 20000m
+                    BDA_Price = 20000m,
+                    CanvasPrice = 21000m
                 },
                 new Graphic
                 {
@@ -348,6 +355,7 @@ namespace DylanTaylorArt.Migrations
 
                     Price = 18000m,
                     BDA_Price = 40000m,
+                    CastlePrice = 41000m,
                     CanvasPrice = 22500
                 },
                 new Graphic
@@ -369,7 +377,8 @@ namespace DylanTaylorArt.Migrations
                     PaperWidth = 22,
                     PaperHeight = 27.5,
 
-                    Price = 4800m
+                    Price = 4800m,
+                    CanvasPrice = 5500m
                 },
                 new Graphic
                 {
@@ -392,7 +401,8 @@ namespace DylanTaylorArt.Migrations
                     PaperWidth = 22,
                     PaperHeight = 27.5,
 
-                    Price = 7000m
+                    Price = 7000m,
+                    CanvasPrice = 9500m
                 },
 
                 new Graphic
@@ -420,6 +430,7 @@ namespace DylanTaylorArt.Migrations
 
                     Price = 2150m,
                     BDA_Price = 4000m,
+                    CastlePrice = 4250m,
                     CanvasPrice = 3200m
                 },
                 new Graphic
@@ -447,6 +458,7 @@ namespace DylanTaylorArt.Migrations
 
                     Price = 2600m,
                     BDA_Price = 4000m,
+                    CastlePrice = 4250m,
                     CanvasPrice = 3200m
                 },
                new Graphic
@@ -474,7 +486,8 @@ namespace DylanTaylorArt.Migrations
 
                    Price = 2850m,
                    BDA_Price = 5750m,
-                   CanvasPrice = 4000m
+                   CanvasPrice = 4000m,
+                   CastlePrice = 2000m
                },
                 new Graphic
                 {
@@ -500,7 +513,8 @@ namespace DylanTaylorArt.Migrations
                     PaperHeight = 27.5,
 
                     Price = 2850m,
-                    BDA_Price = 5750m
+                    BDA_Price = 5750m,
+                    CastlePrice = 6000m
                 },
                new Graphic
                {
@@ -527,6 +541,7 @@ namespace DylanTaylorArt.Migrations
 
                    Price = 2850m,
                    BDA_Price = 6000m,
+                   CastlePrice = 6250m,
                    CanvasPrice = 4000m
                },
                new Graphic
@@ -537,7 +552,7 @@ namespace DylanTaylorArt.Migrations
                    Title = "Sunday Afternoon",
                    SmallImagePath = "SunAfternoon",
 
-                   Format = GraphicFormats.Standard,
+                   Format = GraphicFormats.Medium,
                    Portfolio = Portfolios.None,
                    Aspect = PictureAspects.Portrait,
                    Status = GraphicStatus.ForSale,
@@ -553,7 +568,7 @@ namespace DylanTaylorArt.Migrations
                    PaperHeight = 27.5,
 
                    Price = 3000m,
-                   BDA_Price = 0,
+                   BDA_Price = 5500,
                    CanvasPrice = 0,
                    CastlePrice = 0
                },
@@ -581,9 +596,9 @@ namespace DylanTaylorArt.Migrations
                    PaperHeight = 27.5,
 
                    Price = 2150m,
-                   BDA_Price = 0,
-                   CanvasPrice = 0,
-                   CastlePrice = 0
+                   BDA_Price = 3250,
+                   CastlePrice = 3500m,
+                   CanvasPrice = 2500m
                },
                new Graphic
                {
@@ -609,9 +624,9 @@ namespace DylanTaylorArt.Migrations
                    PaperHeight = 27.5,
 
                    Price = 2850m,
-                   BDA_Price = 0,
-                   CanvasPrice = 0,
-                   CastlePrice = 0
+                   BDA_Price = 4250m,
+                   CastlePrice = 4500m,
+                   CanvasPrice = 0
                },
                new Graphic
                {
@@ -622,7 +637,7 @@ namespace DylanTaylorArt.Migrations
                    SmallImagePath = "Cassandra",
 
                    Format = GraphicFormats.Standard,
-                   Portfolio = Portfolios.None,
+                   Portfolio = Portfolios.Parts_1of4,
                    Aspect = PictureAspects.Portrait,
                    Status = GraphicStatus.ForSale,
 
@@ -637,9 +652,9 @@ namespace DylanTaylorArt.Migrations
                    PaperHeight = 27.5,
 
                    Price = 1100m,
-                   BDA_Price = 0,
-                   CanvasPrice = 0,
-                   CastlePrice = 0
+                   BDA_Price = 6000,
+                   CastlePrice = 7000m,
+                   CanvasPrice = 1500m
                },
                new Graphic
                {
@@ -665,7 +680,7 @@ namespace DylanTaylorArt.Migrations
                    PaperHeight = 27.5,
 
                    Price = 16000m,
-                   BDA_Price = 0,
+                   BDA_Price = 40000m,
                    CanvasPrice = 0,
                    CastlePrice = 0
                },
@@ -721,9 +736,9 @@ namespace DylanTaylorArt.Migrations
                    PaperHeight = 27.5,
 
                    Price = 2100m,
-                   BDA_Price = 0,
-                   CanvasPrice = 0,
-                   CastlePrice = 0
+                   BDA_Price = 4000m,
+                   CanvasPrice = 4250m,
+                   CastlePrice = 3333m
                },
                new Graphic
                {
@@ -749,7 +764,7 @@ namespace DylanTaylorArt.Migrations
                    PaperHeight = 27.5,
 
                    Price = 2850m,
-                   BDA_Price = 0,
+                   BDA_Price = 4750m,
                    CanvasPrice = 0,
                    CastlePrice = 0
                },
@@ -777,9 +792,9 @@ namespace DylanTaylorArt.Migrations
                    PaperHeight = 27.5,
 
                    Price = 3000m,
-                   BDA_Price = 0,
-                   CanvasPrice = 0,
-                   CastlePrice = 0
+                   BDA_Price = 5000m,
+                   CastlePrice = 5250m,
+                   CanvasPrice = 4166m
                },
                new Graphic
                {
@@ -834,8 +849,8 @@ namespace DylanTaylorArt.Migrations
 
                    Price = 6850m,
                    BDA_Price = 15000,
-                   CanvasPrice = 0,
-                   CastlePrice = 0
+                   CastlePrice = 15850m,
+                   CanvasPrice = 0
                },
                new Graphic
                {
@@ -862,8 +877,8 @@ namespace DylanTaylorArt.Migrations
 
                    Price = 5500m,
                    BDA_Price = 15000,
-                   CanvasPrice = 0,
-                   CastlePrice = 0
+                   CastlePrice = 15850,
+                   CanvasPrice = 0
                },
                new Graphic
                {
@@ -890,8 +905,8 @@ namespace DylanTaylorArt.Migrations
 
                    Price = 6500m,
                    BDA_Price = 15000,
-                   CanvasPrice = 0,
-                   CastlePrice = 0
+                   CastlePrice = 15850,
+                   CanvasPrice = 0
                },
                new Graphic
                {
@@ -918,8 +933,8 @@ namespace DylanTaylorArt.Migrations
 
                    Price = 1750m,
                    BDA_Price = 2000,
-                   CanvasPrice = 0,
-                   CastlePrice = 0
+                   CastlePrice = 2250m,
+                   CanvasPrice = 1800m
                },
               new Graphic
               {
@@ -974,8 +989,8 @@ namespace DylanTaylorArt.Migrations
 
                   Price = 3250m,
                   BDA_Price = 4750,
-                  CanvasPrice = 0,
-                  CastlePrice = 0
+                  CastlePrice = 5000m,
+                  CanvasPrice = 0
               },
               new Graphic
               {
@@ -1002,8 +1017,8 @@ namespace DylanTaylorArt.Migrations
 
                   Price = 5700m,
                   BDA_Price = 10000,
-                  CanvasPrice = 0,
-                  CastlePrice = 0
+                  CastlePrice = 10350m,
+                  CanvasPrice = 0
               },
               new Graphic
               {
@@ -1030,8 +1045,8 @@ namespace DylanTaylorArt.Migrations
 
                   Price = 4500m,
                   BDA_Price = 7200,
-                  CanvasPrice = 0,
-                  CastlePrice = 0
+                  CastlePrice = 0,
+                  CanvasPrice = 0
               },
               new Graphic
               {
@@ -1086,8 +1101,8 @@ namespace DylanTaylorArt.Migrations
 
                   Price = 3800m,
                   BDA_Price = 7200,
-                  CanvasPrice = 0,
-                  CastlePrice = 0
+                  CastlePrice = 5750m,
+                  CanvasPrice = 0
               },
               new Graphic
               {
@@ -1114,8 +1129,8 @@ namespace DylanTaylorArt.Migrations
 
                   Price = 2250m,
                   BDA_Price = 3500,
-                  CanvasPrice = 0,
-                  CastlePrice = 0
+                  CanvasPrice = 3250m,
+                  CastlePrice = 3500m
               },
              new Graphic
              {
@@ -1142,8 +1157,8 @@ namespace DylanTaylorArt.Migrations
 
                  Price = 2250m,
                  BDA_Price = 3500,
-                 CanvasPrice = 0,
-                 CastlePrice = 0
+                 CastlePrice = 3250m,
+                 CanvasPrice = 3500m
              });
         }
     }
