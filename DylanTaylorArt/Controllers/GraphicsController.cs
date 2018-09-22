@@ -19,7 +19,7 @@ namespace DylanTaylorArt.Controllers
         public ActionResult Index()
         {
             //var graphics = db.Graphics.Include(c => c.Collection);
-            return View(db.Graphics.OrderBy(y => y.Collection.Year).ToList());
+            return View(db.Collections.OrderBy(y => y.Year).ToList());
         }
 
         public ActionResult Prices()

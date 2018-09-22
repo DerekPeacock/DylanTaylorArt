@@ -1,6 +1,8 @@
-﻿@model IEnumerable<DylanTaylorArt.Models.Graphic>
+﻿@model IEnumerable<DylanTaylorArt.Models.Collection>
 
 @{
+    /**/
+
     ViewBag.Title = "Graphics List";
 }
 
@@ -15,66 +17,69 @@
 <p>
     @Html.ActionLink("Add New Graphic", "Create", null, new { @class = "btn btn-success" })
 </p>
-<table class="table table-bordered table-hover table-striped">
-    <tr>
-        <th>
-            Collection
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th>
-            Copy No
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.FramedWith)
-        </th>
-        <th class="text-center">
-            Format
-        </th>
-        <th class="text-center">
-            Portfolio
-        </th>
-        <th>
-            Price
-        </th>
-        <th>
-            Action
-        </th>
-    </tr>
+@foreach (var item in Model)
+{
+    <h2>@item.Year  @item.CollectionName</h2>
+    <br/>
+    <table class="table table-hover table-condensed">
+        <tr>
+            <th class="bg-primary">
+                Graphic Title
+            </th>
+            <th class="bg-primary">
+                Copy No
+            </th>
+            <th class="bg-primary">
+                Framed
+            </th>
+            <th class="text-center bg-primary">
+                Format
+            </th>
+            <th class="text-center bg-primary">
+                Portfolio
+            </th>
+            <th class="bg-primary">
+                Price
+            </th>
+            <th class="bg-primary">
+                Action
+            </th>
+        </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td class="text-center">
-            @Html.DisplayFor(modelItem => item.Collection.Year)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td class="text-center">
-            @Html.DisplayFor(modelItem => item.CopyNo)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.FramedWith)
-        </td>
-        <td class="text-center">
-            @Html.DisplayFor(modelItem => item.Format)
-        </td>
-        <td class="text-center">
-            @Html.DisplayFor(modelItem => item.Portfolio)
-        </td>
-        <td>
-            <strong>
-                @Html.DisplayFor(modelItem => item.Price)
-            </strong>
-        </td>
+        @foreach (var graphic in item.Graphics)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => graphic.Title)
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => graphic.CopyNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => graphic.FramedWith)
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => graphic.Format)
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => graphic.Portfolio)
+            </td>
+            <td>
+                <strong>
+                    @Html.DisplayFor(modelItem => graphic.Price)
+                </strong>
+            </td>
 
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.GraphicID }, new { @class = "btn btn-success" })
-            @Html.ActionLink("Details", "Details", new { id = item.GraphicID }, new { @class = "btn btn-default" })
-            @Html.ActionLink("Delete", "Delete", new { id = item.GraphicID }, new { @class = "btn btn-danger" })
-        </td>
-    </tr>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = graphic.GraphicID }, new { @class = "btn btn-success btn-sm" })
+                @Html.ActionLink("Details", "Details", new { id = graphic.GraphicID }, new { @class = "btn btn-default btn-sm" })
+                @Html.ActionLink("Delete", "Delete", new { id = graphic.GraphicID }, new { @class = "btn btn-danger btn-sm" })
+            </td>
+        </tr>
+        }
+
+    </table>
+
 }
 
-</table>
+
