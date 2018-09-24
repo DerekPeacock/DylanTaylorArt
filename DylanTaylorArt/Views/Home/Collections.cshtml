@@ -2,12 +2,15 @@
 
 @{
     ViewBag.Title = "Collections";
+    int colNo = 0;
+    int graphicNo = 0;
 }
 
 <section class="jumbotron">
 
     <h1>Dylan Taylor Art</h1>
     <h2>@Model.CollectionName Collection</h2>
+    
     @using (Html.BeginForm())
     {
         @Html.DropDownList("CollectionID", String.Empty)
@@ -15,28 +18,38 @@
     }
 
 </section>
+
 <section>
-    <div class="row">
-        <div class="col-md-4">
-            <article class="panel panel-success">
+
+    <div class="col-lg-4">
+    @foreach (var graphic in Model.Graphics)
+    {
+
+        if (colNo > 0 && colNo % 4 == 0)
+        {
+            @:</div><div class="col-lg-4">
+        }
+
+        <article class="panel panel-success">
                 <div class="panel-heading">
-                    <h3 class="text-center">Sidewalk Cafe</h3>
+                    <h3 class="text-center">@graphic.Title</h3>
                 </div>
                 <div class="panel-body">
                     <a href="#print1Details" data-toggle="collapse">
                         <figure>
-                            <img class="img-responsive" src="~/Images/Print1.png">
+                            <img class="img-responsive" src="@Model.ImagePath/@graphic.SmallImagePath">
                         </figure>
                     </a>
                     <br />
                     <p class="text-right">
-                        The Bob Dylan Collection 2008
+                        @Model.CollectionName
                     </p>
                     <p class="text-right">
-                        Graphics - Standard Format
+                        @graphic.Format
                     </p>
                     <p class="text-right">
-                        Price £2,000
+                        <strong>£@graphic.Price</strong>
+                        
                     </p>
                     <p>
                         <button class="btn btn-success pull-right" type="button"
@@ -44,7 +57,8 @@
                             Limited Edition <span class="badge">1</span>
                         </button>
                     </p>
-                    <div class="collapse" id="print1Details">
+
+                    @*<div class="collapse" id="print1Details">
                         <br /><br />
                         <div class="well">
                             <p>
@@ -86,65 +100,12 @@
 
                             </table>
                         </div>
-                    </div>
+                    </div>*@
                 </div>
             </article>
-        </div>
-        <div class="col-md-4">
-            <article class="panel panel-success">
-                <div class="panel-heading">
-                    <h3 class="text-center">Vista from Balcony</h3>
-                </div>
-                <div class="panel-body">
-                    <a href="#">
-                        <figure>
-                            <img class="img-responsive" src="~/Images/Print2.png">
-                        </figure>
-                    </a>
-                    <br />
-                    <p class="text-right">
-                        The Bob Dylan Collection 2010
-                    </p>
-                    <p class="text-right">
-                        Graphics - Medium Format
-                    </p>
-                    <p class="text-right">
-                        Price £3,000
-                    </p>
 
-                    <button class="btn btn-success pull-right" type="button">
-                        Limited Edition <span class="badge">1</span>
-                    </button>
-                </div>
-            </article>
-        </div>
-        <div class="col-md-4">
-            <article class="panel panel-success">
-                <div class="panel-heading">
-                    <h3 class="text-center">Sidewalk Cafe</h3>
-                </div>
-                <div class="panel-body">
-                    <a href="#">
-                        <figure>
-                            <img class="img-responsive" src="~/Images/Print3.png">
-                        </figure>
-                    </a>
-                    <br />
-                    <p class="text-right">
-                        The Bob Dylan Collection 2018
-                    </p>
-                    <p class="text-right">
-                        Graphics - Standard Format
-                    </p>
-                    <p class="text-right">
-                        Price £3,500
-                    </p>
-
-                    <button class="btn btn-success pull-right" type="button">
-                        Limited Edition <span class="badge">1</span>
-                    </button>
-                </div>
-            </article>
-        </div>
+        colNo++;
+    }
     </div>
+
 </section>

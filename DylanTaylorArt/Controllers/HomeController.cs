@@ -36,10 +36,10 @@ namespace DylanTaylorArt.Controllers
             return View();
         }
 
-        public ActionResult Collections(int id = 1)
+        public ActionResult Collections(int CollectionID = 1)
         {
-            PopulateDropdowns(id);
-            return View(db.Collections.Find(id));
+            PopulateDropdowns(CollectionID);
+            return View(db.Collections.Find(CollectionID));
         }
 
         public ActionResult Shows()
