@@ -1,13 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using DylanTaylorArt.Models;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace DylanTaylorArt.Controllers
 {
     public class HomeController : Controller
     {
+
+        private GraphicDbContext db = new GraphicDbContext();
+
+
         public ActionResult Index()
         {
             return View();
@@ -34,11 +36,10 @@ namespace DylanTaylorArt.Controllers
             return View();
         }
 
-        public ActionResult Collections()
+        public ActionResult Collections(int id = 1)
         {
-            ViewBag.Message = "Your Collections page.";
-
-            return View();
+            PopulateDropdowns(id);
+            return View(db.Collections.Find(id));
         }
 
         public ActionResult Shows()
@@ -46,6 +47,12 @@ namespace DylanTaylorArt.Controllers
             ViewBag.Message = "Your on show page.";
 
             return View();
+        }
+
+        protected void PopulateDropdowns(object selectedCollection = null)
+        {
+            var collections = db.Collections;
+            ViewBag.CollectionID = new SelectList(collections, "CollectionID", "CollectionName", selectedCollection);
         }
 
     }

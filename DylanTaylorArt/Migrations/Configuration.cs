@@ -104,7 +104,7 @@ namespace DylanTaylorArt.Migrations
 
         private static void SeedGraphics(GraphicDbContext context)
         {
-            context.Graphics.AddOrUpdate(g => g.Title,
+            context.Graphics.AddOrUpdate(g => g.GraphicID,
                 new Graphic
                 {
                     GraphicID = 1,
