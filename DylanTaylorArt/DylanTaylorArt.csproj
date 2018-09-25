@@ -286,6 +286,16 @@
     <Content Include="Images\DB2008\Truck.png" />
     <Content Include="Images\DB2008\WomanInPub.png" />
     <Content Include="Images\DB2008\WomanInPubPink.png" />
+    <Content Include="Images\DB2010\CassandraGreen.png" />
+    <Content Include="Images\DB2010\Fisherman.png" />
+    <Content Include="Images\DB2010\RoseHill.png" />
+    <Content Include="Images\DB2010\SundayPM.png" />
+    <Content Include="Images\DB2010\TrainTracksWhite.png" />
+    <Content Include="Images\DB2010\TrainTracks4.png" />
+    <Content Include="Images\DB2012TT\TrainTracksBlue.png" />
+    <Content Include="Images\DB2012TT\TrainTracksGreen.png" />
+    <Content Include="Images\DB2012TT\TrainTracksRed.png" />
+    <Content Include="Images\DB2012TT\TrainTracksWhite.png" />
     <Content Include="Images\Logo.png" />
     <Content Include="Images\Logo1.jpg" />
     <Content Include="Images\Logo2.png" />
@@ -380,7 +390,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\DB2012TT\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

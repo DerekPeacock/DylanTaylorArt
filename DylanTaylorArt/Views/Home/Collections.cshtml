@@ -9,11 +9,16 @@
 
     <h1>Dylan Taylor Art</h1>
     <h2>@Model.CollectionName Collection</h2>
-    
+    <p>
+        A limited edition of 295 copies of Graphics hand signed in graphite pencil by Bob Dylan. 
+        <br/>Printed on Hahnem&uuml;hle 350gm Museum Etching Paper
+    </p>
+
+
     @using (Html.BeginForm())
     {
         @Html.DropDownList("CollectionID", String.Empty)
-        <input type="submit" value="Change Collection"/>
+        <input type="submit" value="Change Collection" />
     }
 
 </section>
@@ -37,7 +42,7 @@
                     <div class="panel-body">
                         <a href="#print1Details" data-toggle="collapse">
                             <figure>
-                                <img class="img-responsive" src="/Images/@Model.ImagePath/@graphic.SmallImagePath">
+                                <img class="img-responsive" src="~/Images/@Model.ImagePath/@graphic.SmallImagePath">
                             </figure>
                         </a>
                         <br />
@@ -47,8 +52,14 @@
                         <p class="text-right">
                             @graphic.Format Format
                         </p>
+                        @if(graphic.Portfolio != DylanTaylorArt.Models.Portfolios.None)
+                        {
+                            <p class="text-right">
+                                @graphic.Portfolio
+                            </p>
+                        }
                         <p class="text-right">
-                            <strong>£@graphic.Price</strong>
+                            <strong>£@graphic.Price.ToString("N0")</strong>
                         </p>
                         @{ 
                             string detailsID = "details" + graphic.GraphicID;
@@ -56,18 +67,17 @@
                         <p>
                             <button class="btn btn-success pull-right" type="button"
                                     data-toggle="collapse" data-target="#@detailsID">
-                                Limited Edition <span class="badge">1</span>
+                                More Details
+                                @if (graphic.CopyNo > 0)
+                                {
+                                    <span class="badge">@graphic.CopyNo</span>
+                                }
                             </button>
                         </p>
 
                         <div class="collapse" id="@detailsID">
                         <br /><br />
                         <div class="well">
-                            <p>
-                                A limited edition (295) hand signed in graphite pencil 
-                                by Bob Dylan, entitled @graphic.Title.
-                            </p>
-                            <p>Printed on @graphic.Paper</p>
                             <table class="table table-bordered">
                                 <tr>
                                     <td>
