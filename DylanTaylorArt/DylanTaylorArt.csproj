@@ -266,6 +266,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\DB2008\ManBridge4.png" />
+    <Content Include="Images\DB2008\TrainTracks4.png" />
+    <Content Include="Images\DB2008\WomanInPub4.png" />
     <Content Include="Images\DB2009\3Chairs.png" />
     <Content Include="Images\DB2009\Bicycle.png" />
     <Content Include="Images\DB2009\RoseHill.png" />

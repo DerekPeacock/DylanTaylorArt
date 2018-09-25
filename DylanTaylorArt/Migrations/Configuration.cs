@@ -111,7 +111,7 @@ namespace DylanTaylorArt.Migrations
                     CollectionID = 1,
                     CopyNo = 99,
                     Title = "Side Walk Cafe",
-                    SmallImagePath = "SideWalkCafe",
+                    SmallImagePath = "SideWalkCafe.png",
 
                     Format = GraphicFormats.Standard,
                     Aspect = PictureAspects.Portrait,
@@ -133,7 +133,7 @@ namespace DylanTaylorArt.Migrations
                     CollectionID = 1,
                     CopyNo = 254,
                     Title = "Lakeside Cabin",
-                    SmallImagePath = "LakesideCabin",
+                    SmallImagePath = "LakesideCabin.png",
 
                     Format = GraphicFormats.Standard,
                     Aspect = PictureAspects.Landscape,
@@ -155,8 +155,8 @@ namespace DylanTaylorArt.Migrations
                     GraphicID = 3,
                     CollectionID = 1,
                     CopyNo = 99,
-                    Title = "Dads Restaurant",
-                    SmallImagePath = "DadsRestaurant",
+                    Title = "Dad's Restaurant",
+                    SmallImagePath = "DadsRestaurant.png",
 
                     Format = GraphicFormats.Standard,
                     Aspect = PictureAspects.Portrait,
@@ -179,7 +179,7 @@ namespace DylanTaylorArt.Migrations
                     CollectionID = 1,
                     CopyNo = 229,
                     Title = "Amagansett",
-                    SmallImagePath = "Amagansett",
+                    SmallImagePath = "Amagansett.png",
 
                     Format = GraphicFormats.Medium,
                     Aspect = PictureAspects.Portrait,
@@ -202,7 +202,7 @@ namespace DylanTaylorArt.Migrations
                     CollectionID = 1,
                     CopyNo = 234,
                     Title = "Truck",
-                    SmallImagePath = "Truck",
+                    SmallImagePath = "Truck.png",
 
                     Format = GraphicFormats.Medium,
                     Aspect = PictureAspects.Portrait,
@@ -225,7 +225,7 @@ namespace DylanTaylorArt.Migrations
                     CollectionID = 1,
                     CopyNo = 52,
                     Title = "Man on a Bridge",
-                    SmallImagePath = "ManBridge",
+                    SmallImagePath = "ManBridge.png",
 
                     Format = GraphicFormats.Medium,
                     Aspect = PictureAspects.Portrait,
@@ -247,8 +247,8 @@ namespace DylanTaylorArt.Migrations
                     GraphicID = 7,
                     CollectionID = 1,
                     CopyNo = 52,
-                    Title = "Women in Red Lion Pub",
-                    SmallImagePath = "WomenInPub",
+                    Title = "Woman in Red Lion Pub",
+                    SmallImagePath = "WomanInPub.png",
 
                     Format = GraphicFormats.Medium,
                     Aspect = PictureAspects.Portrait,
@@ -269,8 +269,8 @@ namespace DylanTaylorArt.Migrations
                     GraphicID = 8,
                     CollectionID = 1,
                     CopyNo = 52,
-                    Title = "Women in Red Lion Pub - Set of 4",
-                    SmallImagePath = "WomenInPub4",
+                    Title = "Woman in Red Lion Pub - Set of 4",
+                    SmallImagePath = "WomanInPub4.png",
 
                     Format = GraphicFormats.Standard,
                     Aspect = PictureAspects.Portrait,
@@ -293,8 +293,8 @@ namespace DylanTaylorArt.Migrations
                     GraphicID = 9,
                     CollectionID = 1,
                     CopyNo = 52,
-                    Title = "Women in Red Lion Pub - Pink Dress",
-                    SmallImagePath = "WomenInPubPink",
+                    Title = "Woman in Red Lion Pub - Pink Dress",
+                    SmallImagePath = "WomanInPubPink.png",
 
                     Format = GraphicFormats.Standard,
                     Aspect = PictureAspects.Portrait,
@@ -317,7 +317,7 @@ namespace DylanTaylorArt.Migrations
                     CollectionID = 1,
                     CopyNo = 99,
                     Title = "Man on a Bridge - Brown Coat",
-                    SmallImagePath = "ManBridgeBrown",
+                    SmallImagePath = "ManBridgeBrown.png",
 
                     Format = GraphicFormats.Standard,
                     Portfolio = Portfolios.Parts_1of4,
@@ -340,7 +340,7 @@ namespace DylanTaylorArt.Migrations
                     CollectionID = 1,
                     CopyNo = 99,
                     Title = "Train Tracks - Set of 4",
-                    SmallImagePath = "TrainTracks",
+                    SmallImagePath = "TrainTracks4.png",
 
                     Format = GraphicFormats.Standard,
                     Portfolio = Portfolios.Setof_4,
@@ -364,7 +364,7 @@ namespace DylanTaylorArt.Migrations
                     CollectionID = 1,
                     CopyNo = 99,
                     Title = "Train Tracks - White",
-                    SmallImagePath = "TrainTracksWhite",
+                    SmallImagePath = "TrainTracksWhite.png",
 
                     Format = GraphicFormats.Standard,
                     Portfolio = Portfolios.Parts_1of4,
@@ -386,7 +386,7 @@ namespace DylanTaylorArt.Migrations
                     CollectionID = 1,
                     CopyNo = 81,
                     Title = "Train Tracks - Orange",
-                    SmallImagePath = "TrainTracksOrange",
+                    SmallImagePath = "TrainTracksOrange.png",
 
                     Format = GraphicFormats.Standard,
                     Portfolio = Portfolios.Parts_1of4,
@@ -411,7 +411,7 @@ namespace DylanTaylorArt.Migrations
                     CollectionID = 2,
                     CopyNo = 0,
                     Title = "Truck Stop",
-                    SmallImagePath = "TruckStop",
+                    SmallImagePath = "TruckStop.png",
 
                     Format = GraphicFormats.Standard,
                     Portfolio = Portfolios.None,
@@ -439,7 +439,7 @@ namespace DylanTaylorArt.Migrations
                     CollectionID = 2,
                     CopyNo = 0,
                     Title = "Three Chairs",
-                    SmallImagePath = "3Chairs",
+                    SmallImagePath = "3Chairs.png",
 
                     Format = GraphicFormats.Standard,
                     Portfolio = Portfolios.None,
@@ -467,7 +467,7 @@ namespace DylanTaylorArt.Migrations
                    CollectionID = 2,
                    CopyNo = 0,
                    Title = "Bicycle",
-                   SmallImagePath = "Bicycle",
+                   SmallImagePath = "Bicycle.png",
 
                    Format = GraphicFormats.Standard,
                    Portfolio = Portfolios.None,
@@ -495,7 +495,7 @@ namespace DylanTaylorArt.Migrations
                     CollectionID = 2,
                     CopyNo = 0,
                     Title = "Sunflowers",
-                    SmallImagePath = "Sunflowers",
+                    SmallImagePath = "Sunflowers.png",
 
                     Format = GraphicFormats.Standard,
                     Portfolio = Portfolios.None,
@@ -522,7 +522,7 @@ namespace DylanTaylorArt.Migrations
                    CollectionID = 2,
                    CopyNo = 0,
                    Title = "Rose on a Hillside",
-                   SmallImagePath = "RoseHill",
+                   SmallImagePath = "RoseHill.png",
 
                    Format = GraphicFormats.Standard,
                    Portfolio = Portfolios.None,
@@ -550,7 +550,7 @@ namespace DylanTaylorArt.Migrations
                    CollectionID = 3,
                    CopyNo = 0,
                    Title = "Sunday Afternoon",
-                   SmallImagePath = "SunAfternoon",
+                   SmallImagePath = "SunAfternoon.png",
 
                    Format = GraphicFormats.Medium,
                    Portfolio = Portfolios.None,
@@ -578,7 +578,7 @@ namespace DylanTaylorArt.Migrations
                    CollectionID = 3,
                    CopyNo = 0,
                    Title = "Fisherman",
-                   SmallImagePath = "Fisherman",
+                   SmallImagePath = "Fisherman.png",
 
                    Format = GraphicFormats.Standard,
                    Portfolio = Portfolios.None,
@@ -606,7 +606,7 @@ namespace DylanTaylorArt.Migrations
                    CollectionID = 3,
                    CopyNo = 0,
                    Title = "Rose on Hillside",
-                   SmallImagePath = "RoseHill",
+                   SmallImagePath = "RoseHill.png",
 
                    Format = GraphicFormats.Standard,
                    Portfolio = Portfolios.None,
@@ -634,7 +634,7 @@ namespace DylanTaylorArt.Migrations
                    CollectionID = 3,
                    CopyNo = 0,
                    Title = "Cassandra",
-                   SmallImagePath = "Cassandra",
+                   SmallImagePath = "Cassandra.png",
 
                    Format = GraphicFormats.Standard,
                    Portfolio = Portfolios.Parts_1of4,
@@ -662,7 +662,7 @@ namespace DylanTaylorArt.Migrations
                    CollectionID = 3,
                    CopyNo = 0,
                    Title = "Train Tracks",
-                   SmallImagePath = "TrainTracks4",
+                   SmallImagePath = "TrainTracks4.png",
 
                    Format = GraphicFormats.Standard,
                    Portfolio = Portfolios.Setof_4,
@@ -690,7 +690,7 @@ namespace DylanTaylorArt.Migrations
                    CollectionID = 3,
                    CopyNo = 0,
                    Title = "Train Tracks -White",
-                   SmallImagePath = "TrainTracksWhite",
+                   SmallImagePath = "TrainTracksWhite.png",
 
                    Format = GraphicFormats.Standard,
                    Portfolio = Portfolios.Parts_1of4,
@@ -718,7 +718,7 @@ namespace DylanTaylorArt.Migrations
                    CollectionID = 4,
                    CopyNo = 0,
                    Title = "Sidewalk Cafe",
-                   SmallImagePath = "SideWalkCafe",
+                   SmallImagePath = "SideWalkCafe.png",
 
                    Format = GraphicFormats.Standard,
                    Portfolio = Portfolios.None,
@@ -746,7 +746,7 @@ namespace DylanTaylorArt.Migrations
                    CollectionID = 5,
                    CopyNo = 0,
                    Title = "House on Union Street",
-                   SmallImagePath = "HouseOnUnionStreet",
+                   SmallImagePath = "HouseOnUnionStreet.png",
 
                    Format = GraphicFormats.Standard,
                    Portfolio = Portfolios.None,
@@ -774,7 +774,7 @@ namespace DylanTaylorArt.Migrations
                    CollectionID = 5,
                    CopyNo = 0,
                    Title = "Man on Bridge",
-                   SmallImagePath = "ManBridge",
+                   SmallImagePath = "ManBridge.png",
 
                    Format = GraphicFormats.Standard,
                    Portfolio = Portfolios.None,
@@ -802,7 +802,7 @@ namespace DylanTaylorArt.Migrations
                    CollectionID = 9,
                    CopyNo = 0,
                    Title = "Train Tracks - White",
-                   SmallImagePath = "TrainTracksWhite",
+                   SmallImagePath = "TrainTracksWhite.png",
 
                    Format = GraphicFormats.Medium,
                    Portfolio = Portfolios.None,
@@ -830,7 +830,7 @@ namespace DylanTaylorArt.Migrations
                    CollectionID = 9,
                    CopyNo = 0,
                    Title = "Train Tracks - Blue",
-                   SmallImagePath = "TrainTracksBlue",
+                   SmallImagePath = "TrainTracksBlue.png",
 
                    Format = GraphicFormats.Medium,
                    Portfolio = Portfolios.None,
@@ -858,7 +858,7 @@ namespace DylanTaylorArt.Migrations
                    CollectionID = 9,
                    CopyNo = 0,
                    Title = "Train Tracks - Green",
-                   SmallImagePath = "TrainTracksGreen",
+                   SmallImagePath = "TrainTracksGreen.png",
 
                    Format = GraphicFormats.Medium,
                    Portfolio = Portfolios.None,
@@ -886,7 +886,7 @@ namespace DylanTaylorArt.Migrations
                    CollectionID = 9,
                    CopyNo = 0,
                    Title = "Train Tracks - Red",
-                   SmallImagePath = "TrainTracksRed",
+                   SmallImagePath = "TrainTracksRed.png",
 
                    Format = GraphicFormats.Medium,
                    Portfolio = Portfolios.None,
@@ -914,7 +914,7 @@ namespace DylanTaylorArt.Migrations
                    CollectionID = 6,
                    CopyNo = 0,
                    Title = "Corner Flat",
-                   SmallImagePath = "CornerFlat",
+                   SmallImagePath = "CornerFlat.png",
 
                    Format = GraphicFormats.Standard,
                    Portfolio = Portfolios.None,
@@ -942,7 +942,7 @@ namespace DylanTaylorArt.Migrations
                   CollectionID = 6,
                   CopyNo = 0,
                   Title = "Bicycle",
-                  SmallImagePath = "Bicycle",
+                  SmallImagePath = "Bicycle.png",
 
                   Format = GraphicFormats.Medium,
                   Portfolio = Portfolios.None,
@@ -970,7 +970,7 @@ namespace DylanTaylorArt.Migrations
                   CollectionID = 7,
                   CopyNo = 0,
                   Title = "Cityscape",
-                  SmallImagePath = "Cityscape",
+                  SmallImagePath = "Cityscape.png",
 
                   Format = GraphicFormats.Standard,
                   Portfolio = Portfolios.None,
@@ -998,7 +998,7 @@ namespace DylanTaylorArt.Migrations
                   CollectionID = 7,
                   CopyNo = 0,
                   Title = "Train Tracks - Red",
-                  SmallImagePath = "TrainTracksRed",
+                  SmallImagePath = "TrainTracksRed.png",
 
                   Format = GraphicFormats.Medium,
                   Portfolio = Portfolios.None,
@@ -1026,7 +1026,7 @@ namespace DylanTaylorArt.Migrations
                   CollectionID = 10,
                   CopyNo = 0,
                   Title = "Portfolio - Set of 3",
-                  SmallImagePath = "Portfolio3",
+                  SmallImagePath = "Portfolio3.png",
 
                   Format = GraphicFormats.Standard,
                   Portfolio = Portfolios.Setof_3,
@@ -1054,7 +1054,7 @@ namespace DylanTaylorArt.Migrations
                   CollectionID = 10,
                   CopyNo = 0,
                   Title = "Favela Villa Broncos",
-                  SmallImagePath = "FavelaVilla",
+                  SmallImagePath = "FavelaVilla.png",
 
                   Format = GraphicFormats.Standard,
                   Portfolio = Portfolios.Parts_1of3,
@@ -1082,7 +1082,7 @@ namespace DylanTaylorArt.Migrations
                   CollectionID = 10,
                   CopyNo = 0,
                   Title = "Portfolio - Set of 3",
-                  SmallImagePath = "Portfolio3",
+                  SmallImagePath = "Portfolio3.png",
 
                   Format = GraphicFormats.Standard,
                   Portfolio = Portfolios.Setof_3,
@@ -1110,7 +1110,7 @@ namespace DylanTaylorArt.Migrations
                   CollectionID = 8,
                   CopyNo = 0,
                   Title = "Woman in Red Lion Pub",
-                  SmallImagePath = "WomanPub",
+                  SmallImagePath = "WomanPub.png",
 
                   Format = GraphicFormats.Standard,
                   Portfolio = Portfolios.None,
@@ -1138,7 +1138,7 @@ namespace DylanTaylorArt.Migrations
                  CollectionID = 8,
                  CopyNo = 0,
                  Title = "Sunday Afternoon",
-                 SmallImagePath = "Sunday",
+                 SmallImagePath = "Sunday.png",
 
                  Format = GraphicFormats.Standard,
                  Portfolio = Portfolios.None,

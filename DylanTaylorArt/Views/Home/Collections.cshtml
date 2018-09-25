@@ -3,7 +3,6 @@
 @{
     ViewBag.Title = "Collections";
     int colNo = 0;
-    int graphicNo = 0;
 }
 
 <section class="jumbotron">
@@ -21,64 +20,69 @@
 
 <section>
 
-    <div class="col-lg-4">
-    @foreach (var graphic in Model.Graphics)
-    {
-
-        if (colNo > 0 && colNo % 4 == 0)
+    <div class="row">
+        @foreach (var graphic in Model.Graphics)
         {
-            @:</div><div class="col-lg-4">
-        }
 
-        <article class="panel panel-success">
-                <div class="panel-heading">
-                    <h3 class="text-center">@graphic.Title</h3>
-                </div>
-                <div class="panel-body">
-                    <a href="#print1Details" data-toggle="collapse">
-                        <figure>
-                            <img class="img-responsive" src="@Model.ImagePath/@graphic.SmallImagePath">
-                        </figure>
-                    </a>
-                    <br />
-                    <p class="text-right">
-                        @Model.CollectionName
-                    </p>
-                    <p class="text-right">
-                        @graphic.Format
-                    </p>
-                    <p class="text-right">
-                        <strong>£@graphic.Price</strong>
-                        
-                    </p>
-                    <p>
-                        <button class="btn btn-success pull-right" type="button"
-                                data-toggle="collapse" data-target="#print1Details">
-                            Limited Edition <span class="badge">1</span>
-                        </button>
-                    </p>
+            if (colNo > 0 && colNo % 3 == 0)
+            {
+                @:</div><div class="row">
+            }
 
-                    @*<div class="collapse" id="print1Details">
+            <div class="col-lg-4">
+                <article class="panel panel-success">
+                    <div class="panel-heading">
+                        <h4 class="text-center">@graphic.Title</h4>
+                    </div>
+                    <div class="panel-body">
+                        <a href="#print1Details" data-toggle="collapse">
+                            <figure>
+                                <img class="img-responsive" src="/Images/@Model.ImagePath/@graphic.SmallImagePath">
+                            </figure>
+                        </a>
+                        <br />
+                        <p class="text-right">
+                            @Model.CollectionName
+                        </p>
+                        <p class="text-right">
+                            @graphic.Format Format
+                        </p>
+                        <p class="text-right">
+                            <strong>£@graphic.Price</strong>
+                        </p>
+                        @{ 
+                            string detailsID = "details" + graphic.GraphicID;
+                        }
+                        <p>
+                            <button class="btn btn-success pull-right" type="button"
+                                    data-toggle="collapse" data-target="#@detailsID">
+                                Limited Edition <span class="badge">1</span>
+                            </button>
+                        </p>
+
+                        <div class="collapse" id="@detailsID">
                         <br /><br />
                         <div class="well">
                             <p>
-                                A signed limited edition giclee on paper of 295 by cultural legend, Bob Dylan, entitled Sidewalk Cafe.
+                                A limited edition (295) hand signed in graphite pencil 
+                                by Bob Dylan, entitled @graphic.Title.
                             </p>
+                            <p>Printed on @graphic.Paper</p>
                             <table class="table table-bordered">
                                 <tr>
                                     <td>
                                         Image Size
                                     </td>
                                     <td>
-                                        15.75 x 21.5 in
+                                        @graphic.ImageHeight x @graphic.ImageWidth in
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        Frame Size
+                                        Paper Size
                                     </td>
                                     <td>
-                                        28 x 35 in
+                                        @graphic.PaperHeight x @graphic.PaperWidth in
                                     </td>
                                 </tr>
                                 <tr>
@@ -86,7 +90,7 @@
                                         Framed with
                                     </td>
                                     <td>
-                                        Glass
+                                        @graphic.FramedWith
                                     </td>
                                 </tr>
                                 <tr>
@@ -94,18 +98,21 @@
                                         Copy No
                                     </td>
                                     <td>
-                                        173/295
+                                        @graphic.CopyNo/295
                                     </td>
                                 </tr>
 
                             </table>
                         </div>
-                    </div>*@
+                    </div>
+                                
                 </div>
             </article>
+        </div>
 
-        colNo++;
-    }
+
+            colNo++;
+        }
     </div>
 
 </section>
