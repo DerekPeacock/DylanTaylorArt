@@ -1,99 +1,83 @@
-﻿
+﻿@model IEnumerable<DylanTaylorArt.Models.Collection>
+
 @{
     ViewBag.Title = "Gallery";
+    int colNo = 0;
 }
 <section class="jumbotron">
     <h1>Dylan Taylor Art</h1>
     <h2>Gallery of Bob Dylan Limited Edition Collections</h2>
+    <p>
+        This page displays a small image of each of the available
+        graphic prints.  For a larger view with more details, go
+        to the Collections page and select the appropriate collection.
+    </p>
 </section>
 
-<div class="row">
-    <div class="col-md-2 gallery">
-        <figure>
-            <figcaption class="text-center">Sidewalk Cafe 2008</figcaption>
-            <br />
-            <img class="img-responsive" src="~/Images/Print1.png">
-        </figure>
-    </div>
-    <div class="col-md-2 gallery">
-        <figure>
-            <figcaption class="text-center">Vista From Balcony</figcaption>
-            <br />
-            <img class="img-responsive" src="~/Images/Print2.png">
-        </figure>
-    </div>
-    <div class="col-md-2 gallery">
-        <figure>
-            <figcaption class="text-center">Sidewalk Cafe 2018</figcaption>
-            <br />
-            <img class="img-responsive" src="~/Images/Print3.png">
-        </figure>
-    </div>
-    <div class="col-md-2 gallery">
-        <figure>
-            <figcaption class="text-center">Sidewalk Cafe 2008</figcaption>
-            <br />
-            <img class="img-responsive" src="~/Images/Print1.png">
-        </figure>
-    </div>
-    <div class="col-md-2 gallery">
-        <figure>
-            <figcaption class="text-center">Vista From Balcony</figcaption>
-            <br />
-            <img class="img-responsive" src="~/Images/Print2.png">
-        </figure>
-    </div>
-    <div class="col-md-2 gallery">
-        <figure>
-            <figcaption class="text-center">Sidewalk Cafe 2018</figcaption>
-            <br />
-            <img class="img-responsive" src="~/Images/Print3.png">
-        </figure>
-    </div>
-</div>
+<main>
 
-<div class="row">
-    <div class="col-md-2 gallery">
-        <figure>
-            <figcaption class="text-center">Sidewalk Cafe 2008</figcaption>
-            <br />
-            <img class="img-responsive" src="~/Images/Print1.png">
-        </figure>
-    </div>
-    <div class="col-md-2 gallery">
-        <figure>
-            <figcaption class="text-center">Vista From Balcony</figcaption>
-            <br />
-            <img class="img-responsive" src="~/Images/Print2.png">
-        </figure>
-    </div>
-    <div class="col-md-2 gallery">
-        <figure>
-            <figcaption class="text-center">Sidewalk Cafe 2018</figcaption>
-            <br />
-            <img class="img-responsive" src="~/Images/Print3.png">
-        </figure>
-    </div>
-    <div class="col-md-2 gallery">
-        <figure>
-            <figcaption class="text-center">Sidewalk Cafe 2008</figcaption>
-            <br />
-            <img class="img-responsive" src="~/Images/Print1.png">
-        </figure>
-    </div>
-    <div class="col-md-2 gallery">
-        <figure>
-            <figcaption class="text-center">Vista From Balcony</figcaption>
-            <br />
-            <img class="img-responsive" src="~/Images/Print2.png">
-        </figure>
-    </div>
-    <div class="col-md-2 gallery">
-        <figure>
-            <figcaption class="text-center">Sidewalk Cafe 2018</figcaption>
-            <br />
-            <img class="img-responsive" src="~/Images/Print3.png">
-        </figure>
-    </div>
-</div>
+    @foreach (var item in Model)
+    {
+        <h2>@item.Year  @item.CollectionName</h2>
+        <br />
+        <div class="row">
+            @foreach (var graphic in item.Graphics)
+            {
+
+                if (colNo > 0 && colNo % 6 == 0)
+                {
+                @:</div><div class="row">
+                }
+
+                <div class="col-lg-2">
+                    <article class="panel panel-success">
+                        <div class="panel-heading">
+                            <h4 class="text-center">@graphic.Title</h4>
+                        </div>
+                        <div class="panel-body">
+                            <a href="#print1Details" data-toggle="collapse">
+                                <figure>
+                                    <img class="img-responsive" src="~/Images/@item.ImagePath/@graphic.SmallImagePath">
+                                </figure>
+                            </a>
+                            <br />
+                            <p class="text-right">
+                                @item.CollectionName
+                            </p>
+                            <p class="text-right">
+                                @graphic.Format Format
+                            </p>
+                            @if (graphic.Portfolio != DylanTaylorArt.Models.Portfolios.None)
+                            {
+                                <p class="text-right">
+                                    @graphic.Portfolio
+                                </p>
+                            }
+                            <p class="text-right">
+                                <strong>£@graphic.Price.ToString("N0")</strong>
+                            </p>
+                            @{
+                                string detailsID = "details" + graphic.GraphicID;
+                            }
+                            <p>
+                                @*<button class="btn btn-success pull-right" type="button"
+                                        data-toggle="collapse" data-target="#@detailsID">
+                                    More Details
+                                    @if (graphic.CopyNo > 0)
+                                    {
+                                        <span class="badge">@graphic.CopyNo</span>
+                                    }
+                                </button>*@
+                            </p>
+
+                        </div>
+                    </article>
+                </div>
+
+                colNo++;
+            }
+        </div>
+    }
+
+</main>
 

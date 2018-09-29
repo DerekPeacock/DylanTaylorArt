@@ -33,7 +33,7 @@ namespace DylanTaylorArt.Controllers
         {
             ViewBag.Message = "Your Gallery page.";
 
-            return View();
+            return View(db.Collections.ToList());
         }
 
         public ActionResult Collections(int CollectionID = 1)
