@@ -329,6 +329,8 @@
     <Content Include="Images\Shows\2017MarksTilt4.jpg" />
     <Content Include="Images\Shows\2017MarksTilt5.jpg" />
     <Content Include="Images\slide1.png" />
+    <Content Include="Images\slide2.png" />
+    <Content Include="Images\slide3.png" />
     <Content Include="Notes.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
