@@ -51,7 +51,7 @@ namespace DylanTaylorArt.Controllers
 
         protected void PopulateDropdowns(object selectedCollection = null)
         {
-            var collections = db.Collections;
+            var collections = db.Collections.OrderBy(y => y.Year);
             ViewBag.CollectionID = new SelectList(collections, "CollectionID", "CollectionName", selectedCollection);
         }
 
