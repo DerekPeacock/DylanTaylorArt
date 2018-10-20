@@ -288,9 +288,11 @@
     <Content Include="Images\DB2008\WomanInPub.png" />
     <Content Include="Images\DB2008\WomanInPubPink.png" />
     <Content Include="Images\DB2010\CassandraGreen.png" />
+    <Content Include="Images\DB2010\CassandraRed.png" />
     <Content Include="Images\DB2010\Fisherman.png" />
     <Content Include="Images\DB2010\RoseHill.png" />
     <Content Include="Images\DB2010\SundayPM.png" />
+    <Content Include="Images\DB2010\SundayPM2.PNG" />
     <Content Include="Images\DB2010\TrainTracksWhite.png" />
     <Content Include="Images\DB2010\TrainTracks4.png" />
     <Content Include="Images\DB2011\MotelPool.png" />
