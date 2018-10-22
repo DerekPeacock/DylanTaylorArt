@@ -266,6 +266,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\Brazil\Portfolio3.png" />
     <Content Include="Images\Brazil\VillaBroncos.png" />
     <Content Include="Images\DB2008\ManBridge4.png" />
     <Content Include="Images\DB2008\TrainTracks4.png" />
@@ -297,10 +298,10 @@
     <Content Include="Images\DB2010\TrainTracks4.png" />
     <Content Include="Images\DB2011\MotelPool.png" />
     <Content Include="Images\DB2011\SideWalkCafe.png" />
-    <Content Include="Images\DB2012TT\TrainTracksBlue.png" />
-    <Content Include="Images\DB2012TT\TrainTracksGreen.png" />
-    <Content Include="Images\DB2012TT\TrainTracksRed.png" />
-    <Content Include="Images\DB2012TT\TrainTracksWhite.png" />
+    <Content Include="Images\DB2012\TrainTracksBlue.png" />
+    <Content Include="Images\DB2012\TrainTracksGreen.png" />
+    <Content Include="Images\DB2012\TrainTracksRed.png" />
+    <Content Include="Images\DB2012\TrainTracksWhite.png" />
     <Content Include="Images\DB2012\HouseUnion.png" />
     <Content Include="Images\DB2012\ManBridge.png" />
     <Content Include="Images\DB2013\Bicycle.png" />
@@ -341,6 +342,8 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\dylantaylorart.com - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\dylantaylorart.com - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\valerianweb.com - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\valerianweb.com - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -406,6 +409,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\DB2012TT\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
