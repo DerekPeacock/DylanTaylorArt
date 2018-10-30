@@ -1,19 +1,30 @@
 ﻿<!DOCTYPE html>
-<html>
+<html prefix="og: http://ogp.me/ns#">
 <head>
+    <title>Bob Dylan Art - @ViewBag.Title</title>
+
+    <meta property="og:title" content="Bob Dylan art | Original Bob Dylan paintings and signed prints" />
+    <meta property="og:description" content="Original Bob Dylan paintings and signed prints for sale. Our collection includes work from his Drawn Blank series, created while on tour in the 80s and 90s." />
+    <meta property="og:image" content="~/Images/DB2008/LakesideCabin.png" />
+    <meta property="og:image:width" content="" />
+    <meta property="og:image:height" content="" />
+    <meta property="og:site_name" content="Dylan Taylor Art" />
+    <meta name="twitter:card" content="summary_large_image">
+
     <meta charset="utf-8" />
-    <meta name="description" content="Bob Dylan Graphic Prints signed limited edition from the Drawn Blank Series">
-    <meta name="keywords" content="Bob Dylan,Graphics,Prints,Signed">
+    <meta name="description" content="Original Bob Dylan paintings and signed prints for sale. Limited edition from the Drawn Blank Series created while on tour">
+    <meta name="keywords" content="Bob Dylan">
     <meta name="author" content="Dr Derek Peacock and Martin Taylor">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Dylan Taylor Art</title>
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-9928930-3"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'UA-9928930-3');
     </script>
