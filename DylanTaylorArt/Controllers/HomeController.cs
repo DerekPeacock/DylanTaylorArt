@@ -49,6 +49,13 @@ namespace DylanTaylorArt.Controllers
             return View();
         }
 
+        public ActionResult HenryMoore()
+        {
+            ViewBag.Message = "Your on the Henry Moore page.";
+
+            return View();
+        }
+
         protected void PopulateDropdowns(object selectedCollection = null)
         {
             var collections = db.Collections.OrderBy(y => y.Year);

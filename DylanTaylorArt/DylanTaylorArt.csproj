@@ -311,6 +311,7 @@
     <Content Include="Images\DB2014\TrainTracksRed.png" />
     <Content Include="Images\DB2016\Sunday.png" />
     <Content Include="Images\DB2016\WomanPub.png" />
+    <Content Include="Images\HenryMoore\VioletTorso.jpg" />
     <Content Include="Images\Logo.png" />
     <Content Include="Images\Logo1.jpg" />
     <Content Include="Images\Logo2.png" />
@@ -407,6 +408,7 @@
     <Content Include="Views\Home\Shows.cshtml" />
     <Content Include="Views\Graphics\Prices.cshtml" />
     <Content Include="Views\Graphics\EditPrices.cshtml" />
+    <Content Include="Views\Home\HenryMoore.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
