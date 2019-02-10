@@ -311,6 +311,9 @@
     <Content Include="Images\DB2014\TrainTracksRed.png" />
     <Content Include="Images\DB2016\Sunday.png" />
     <Content Include="Images\DB2016\WomanPub.png" />
+    <Content Include="Images\HenryMoore\3Figures1966.jpg" />
+    <Content Include="Images\HenryMoore\BlackSeatedOrange.jpg" />
+    <Content Include="Images\HenryMoore\Petals.jpg" />
     <Content Include="Images\HenryMoore\VioletTorso.jpg" />
     <Content Include="Images\Logo.png" />
     <Content Include="Images\Logo1.jpg" />
