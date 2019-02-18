@@ -315,6 +315,15 @@
     <Content Include="Images\HenryMoore\BlackSeatedOrange.jpg" />
     <Content Include="Images\HenryMoore\Petals.jpg" />
     <Content Include="Images\HenryMoore\VioletTorso.jpg" />
+    <Content Include="Images\JohnHoyland\CurwenAP.jpg" />
+    <Content Include="Images\JohnHoyland\FriendlyGhost.jpg" />
+    <Content Include="Images\JohnHoyland\Kinor.jpg" />
+    <Content Include="Images\JohnHoyland\Mahi.jpg" />
+    <Content Include="Images\JohnHoyland\SpiritSide.jpg" />
+    <Content Include="Images\JohnHoyland\StoryFromNature.jpg" />
+    <Content Include="Images\JohnHoyland\TheRedBoat.jpg" />
+    <Content Include="Images\JohnHoyland\WindowGenie.jpg" />
+    <Content Include="Images\JohnHoyland\WindowToNature.jpg" />
     <Content Include="Images\Logo.png" />
     <Content Include="Images\Logo1.jpg" />
     <Content Include="Images\Logo2.png" />
@@ -412,6 +421,7 @@
     <Content Include="Views\Graphics\Prices.cshtml" />
     <Content Include="Views\Graphics\EditPrices.cshtml" />
     <Content Include="Views\Home\HenryMoore.cshtml" />
+    <Content Include="Views\Home\JohnHoyland.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

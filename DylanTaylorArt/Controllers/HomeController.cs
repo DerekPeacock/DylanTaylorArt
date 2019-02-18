@@ -56,6 +56,13 @@ namespace DylanTaylorArt.Controllers
             return View();
         }
 
+        public ActionResult JohnHoyland()
+        {
+            ViewBag.Message = "Your on the John Hoyland page.";
+
+            return View();
+        }
+
         protected void PopulateDropdowns(object selectedCollection = null)
         {
             var collections = db.Collections.OrderBy(y => y.Year);
