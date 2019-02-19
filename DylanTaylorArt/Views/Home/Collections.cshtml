@@ -10,16 +10,23 @@
     <h1>Dylan Taylor Art</h1>
     <h2>@Model.CollectionName Collection</h2>
     <p>
-        A limited edition of 295 copies of Graphics hand signed in graphite pencil by Bob Dylan. 
-        <br/>Printed on Hahnem&uuml;hle 350gm Museum Etching Paper
+        A limited edition of 295 copies of Graphics hand signed in graphite pencil by Bob Dylan.
+        <br />Printed on Hahnem&uuml;hle 350gm Museum Etching Paper
     </p>
 
 
     @using (Html.BeginForm())
     {
-        @Html.DropDownList("CollectionID", String.Empty)
+        <span style="font-size:1.0em;">
+            @Html.DropDownList("CollectionID", String.Empty)
+        </span>
+        
         <input type="submit" value="Change Collection" />
     }
+
+    <p class="text-right">
+        <a href="~/Home/Contact" class="btn btn-success btn-lg">Contact Martin &raquo;</a>
+    </p>
 
 </section>
 
