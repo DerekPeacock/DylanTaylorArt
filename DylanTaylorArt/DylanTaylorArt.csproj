@@ -313,6 +313,7 @@
     <Content Include="Images\DB2016\WomanPub.png" />
     <Content Include="Images\Delaunay\1969_Lithograph.jpg" />
     <Content Include="Images\Delaunay\1970_Etching3.jpg" />
+    <Content Include="Images\Delaunay\IMG_3269.JPG" />
     <Content Include="Images\HenryMoore\3Figures1966.jpg" />
     <Content Include="Images\HenryMoore\3RecliningFigures.jpg" />
     <Content Include="Images\HenryMoore\BlackSeatedOrange.jpg" />
@@ -330,6 +331,9 @@
     <Content Include="Images\Logo.png" />
     <Content Include="Images\Logo1.jpg" />
     <Content Include="Images\Logo2.png" />
+    <Content Include="Images\Miro\IMG_3275.JPG" />
+    <Content Include="Images\Miro\IMG_3276.JPG" />
+    <Content Include="Images\Miro\Miro-01.jpg" />
     <Content Include="Images\Print1.png" />
     <Content Include="Images\Print2.png" />
     <Content Include="Images\Print3.png" />
@@ -426,6 +430,7 @@
     <Content Include="Views\Home\HenryMoore.cshtml" />
     <Content Include="Views\Home\JohnHoyland.cshtml" />
     <Content Include="Views\Home\SoniaDelaunay.cshtml" />
+    <Content Include="Views\Home\JoanMiro.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

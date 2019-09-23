@@ -70,6 +70,13 @@ namespace DylanTaylorArt.Controllers
             return View();
         }
 
+        public ActionResult JoanMiro()
+        {
+            ViewBag.Message = "Your on the Joan Miro page.";
+
+            return View();
+        }
+
         protected void PopulateDropdowns(object selectedCollection = null)
         {
             var collections = db.Collections.OrderBy(y => y.Year);
