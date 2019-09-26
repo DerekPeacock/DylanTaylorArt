@@ -58,9 +58,22 @@
                                     @graphic.Portfolio
                                 </p>
                             }
-                            <p class="text-right">
-                                <strong>£@graphic.Price.ToString("N0")</strong>
-                            </p>
+                        <p class="text-right">
+                            @{ if (graphic.Status == DylanTaylorArt.Models.GraphicStatus.Sold)
+                                {
+                                    <strong>Sold</strong>
+                                }
+                                else if (graphic.Status == DylanTaylorArt.Models.GraphicStatus.ForSale)
+                                {
+                                    <strong>£@graphic.Price.ToString("N0")</strong>
+                                }
+                                else if (graphic.Status == DylanTaylorArt.Models.GraphicStatus.Unknown)
+                                {
+                                    <strong>Price on Application</strong>
+                                }
+                            }
+
+                        </p>
                             @{
                                 string detailsID = "details" + graphic.GraphicID;
                             }
