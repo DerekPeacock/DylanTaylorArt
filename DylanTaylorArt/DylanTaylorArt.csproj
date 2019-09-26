@@ -314,6 +314,7 @@
     <Content Include="Images\Delaunay\1969_Lithograph.jpg" />
     <Content Include="Images\Delaunay\1970_Etching3.jpg" />
     <Content Include="Images\Delaunay\IMG_3269.JPG" />
+    <Content Include="Images\Delaunay\IMG_3290.JPG" />
     <Content Include="Images\HenryMoore\3Figures1966.jpg" />
     <Content Include="Images\HenryMoore\3RecliningFigures.jpg" />
     <Content Include="Images\HenryMoore\BlackSeatedOrange.jpg" />
@@ -331,8 +332,16 @@
     <Content Include="Images\Logo.png" />
     <Content Include="Images\Logo1.jpg" />
     <Content Include="Images\Logo2.png" />
+    <Content Include="Images\Miro\ColourOne.jpg" />
     <Content Include="Images\Miro\IMG_3275.JPG" />
     <Content Include="Images\Miro\IMG_3276.JPG" />
+    <Content Include="Images\Miro\IMG_3277.JPG" />
+    <Content Include="Images\Miro\IMG_3278.JPG" />
+    <Content Include="Images\Miro\IMG_3279.jpg" />
+    <Content Include="Images\Miro\IMG_3285.JPG" />
+    <Content Include="Images\Miro\IMG_3286.JPG" />
+    <Content Include="Images\Miro\IMG_3291.JPG" />
+    <Content Include="Images\Miro\IMG_3292.JPG" />
     <Content Include="Images\Miro\Miro-01.jpg" />
     <Content Include="Images\Print1.png" />
     <Content Include="Images\Print2.png" />
