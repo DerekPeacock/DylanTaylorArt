@@ -59,7 +59,8 @@
                                 </p>
                             }
                         <p class="text-right">
-                            @{ if (graphic.Status == DylanTaylorArt.Models.GraphicStatus.Sold)
+                            @Html.Partial("Price", graphic)
+                            @*@{ if (graphic.Status == DylanTaylorArt.Models.GraphicStatus.Sold)
                                 {
                                     <strong>Sold</strong>
                                 }
@@ -71,7 +72,7 @@
                                 {
                                     <strong>Price on Application</strong>
                                 }
-                            }
+                            }*@
 
                         </p>
                             @{

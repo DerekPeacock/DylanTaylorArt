@@ -42,40 +42,48 @@
                 Price
             </th>
             <th class="bg-primary">
+                Status
+            </th>
+
+            <th class="bg-primary">
                 Action
             </th>
         </tr>
 
         @foreach (var graphic in item.Graphics)
         {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => graphic.Title)
-            </td>
-            <td class="text-center">
-                @Html.DisplayFor(modelItem => graphic.CopyNo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => graphic.FramedWith)
-            </td>
-            <td class="text-center">
-                @Html.DisplayFor(modelItem => graphic.Format)
-            </td>
-            <td class="text-center">
-                @Html.DisplayFor(modelItem => graphic.Portfolio)
-            </td>
-            <td>
-                <strong>
-                    @Html.DisplayFor(modelItem => graphic.Price)
-                </strong>
-            </td>
-
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = graphic.GraphicID }, new { @class = "btn btn-success btn-sm" })
-                @Html.ActionLink("Details", "Details", new { id = graphic.GraphicID }, new { @class = "btn btn-default btn-sm" })
-                @Html.ActionLink("Delete", "Delete", new { id = graphic.GraphicID }, new { @class = "btn btn-danger btn-sm" })
-            </td>
-        </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => graphic.Title)
+        </td>
+        <td class="text-center">
+            @Html.DisplayFor(modelItem => graphic.CopyNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => graphic.FramedWith)
+        </td>
+        <td class="text-center">
+            @Html.DisplayFor(modelItem => graphic.Format)
+        </td>
+        <td class="text-center">
+            @Html.DisplayFor(modelItem => graphic.Portfolio)
+        </td>
+        <td>
+            <strong>
+                @Html.DisplayFor(modelItem => graphic.Price)
+            </strong>
+        </td>
+        <td>
+            <strong>
+                @Html.DisplayFor(modelItem => graphic.Status)
+            </strong>
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = graphic.GraphicID }, new { @class = "btn btn-success btn-sm" })
+            @Html.ActionLink("Details", "Details", new { id = graphic.GraphicID }, new { @class = "btn btn-default btn-sm" })
+            @Html.ActionLink("Delete", "Delete", new { id = graphic.GraphicID }, new { @class = "btn btn-danger btn-sm" })
+        </td>
+    </tr>
         }
 
     </table>

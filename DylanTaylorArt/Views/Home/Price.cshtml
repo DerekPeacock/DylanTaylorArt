@@ -1,0 +1,15 @@
+﻿@model DylanTaylorArt.Models.Graphic
+
+@{ if (Model.Status == DylanTaylorArt.Models.GraphicStatus.Sold)
+    {
+        <strong>Sold</strong>
+    }
+    else if (Model.Status == DylanTaylorArt.Models.GraphicStatus.ForSale)
+    {
+        <strong>£@Model.Price.ToString("N0")</strong>
+    }
+    else if (Model.Status == DylanTaylorArt.Models.GraphicStatus.Unknown)
+    {
+        <strong>Price on Application</strong>
+    }
+}

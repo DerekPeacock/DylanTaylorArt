@@ -65,9 +65,10 @@
                                 @graphic.Portfolio
                             </p>
                         }
-                        <p class="text-right">
-                            <strong>£@graphic.Price.ToString("N0")</strong>
-                        </p>
+                    <p class="text-right">
+                        @Html.Partial("Price", graphic)
+                        @*<strong>£@graphic.Price.ToString("N0")</strong>*@
+                    </p>
                         @{ 
                             string detailsID = "details" + graphic.GraphicID;
                         }
