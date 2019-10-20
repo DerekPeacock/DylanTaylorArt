@@ -77,6 +77,12 @@ namespace DylanTaylorArt.Controllers
             return View();
         }
 
+        public ActionResult Picasso()
+        {
+            ViewBag.Message = "Your on the Picasso page.";
+
+            return View();
+        }
         protected void PopulateDropdowns(object selectedCollection = null)
         {
             var collections = db.Collections.OrderBy(y => y.Year);

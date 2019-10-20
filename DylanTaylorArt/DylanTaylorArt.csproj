@@ -354,6 +354,11 @@
     <Content Include="Images\Miro\IMG_3317.JPG" />
     <Content Include="Images\Miro\IMG_3319.JPG" />
     <Content Include="Images\Miro\Miro-01.jpg" />
+    <Content Include="Images\Picasso\IMG_3365 %281%29.JPG" />
+    <Content Include="Images\Picasso\IMG_3365.jpg" />
+    <Content Include="Images\Picasso\IMG_3366.jpg" />
+    <Content Include="Images\Picasso\Nude Back.jpg" />
+    <Content Include="Images\Picasso\Woman and Man with stick.jpg" />
     <Content Include="Images\Print1.png" />
     <Content Include="Images\Print2.png" />
     <Content Include="Images\Print3.png" />
@@ -452,6 +457,7 @@
     <Content Include="Views\Home\SoniaDelaunay.cshtml" />
     <Content Include="Views\Home\JoanMiro.cshtml" />
     <Content Include="Views\Home\Price.cshtml" />
+    <Content Include="Views\Home\Picasso.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
