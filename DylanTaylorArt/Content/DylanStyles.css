@@ -34,3 +34,14 @@
 {
     image-orientation:from-image;
 }
+
+.crazy-horse 
+{
+    font-family:Gigi;
+    font-weight:800;
+    background-color: yellow;
+}
+
+.menu-item-width {
+    width: 180px;
+}

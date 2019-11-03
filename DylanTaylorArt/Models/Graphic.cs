@@ -117,7 +117,8 @@ namespace DylanTaylorArt.Models
         Standard, 
         Medium,
         Large,
-        Complete
+        Complete,
+        Small
     }
 
     public enum Portfolios
@@ -138,6 +139,7 @@ namespace DylanTaylorArt.Models
         Unknown,
         None,
         Glass,
-        Perspex
+        Perspex,
+        Wooden_Panel
     }
 }

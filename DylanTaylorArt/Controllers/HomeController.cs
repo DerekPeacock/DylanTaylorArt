@@ -83,6 +83,20 @@ namespace DylanTaylorArt.Controllers
 
             return View();
         }
+
+        public ActionResult Kellert()
+        {
+            ViewBag.Message = "Your on the Kellert page.";
+            return View(db.Collections.Find(11));
+        }
+
+        public ActionResult Green()
+        {
+            ViewBag.Message = "Your on the Green page.";
+
+            return View();
+        }
+
         protected void PopulateDropdowns(object selectedCollection = null)
         {
             var collections = db.Collections.OrderBy(y => y.Year);

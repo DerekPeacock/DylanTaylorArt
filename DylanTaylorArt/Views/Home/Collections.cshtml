@@ -2,25 +2,35 @@
 
 @{
     ViewBag.Title = "Collections";
-    int colNo = 0;
 }
 
 <section class="jumbotron">
 
-    <h1>Dylan Taylor Art</h1>
-    <h2>@Model.CollectionName Collection</h2>
-    <p>
-        A limited edition of 295 copies of Graphics hand signed in graphite pencil by Bob Dylan.
-        <br />Printed on Hahnem&uuml;hle 350gm Museum Etching Paper
-    </p>
-
+    @if (Model.Artist == DylanTaylorArt.Models.Artists.Bob_Dylan)
+    {
+        <h1>Dylan Taylor Art</h1>
+        <h2>@Model.CollectionName Collection</h2>
+        <p>
+            A limited edition of 295 copies of Graphics hand signed in graphite pencil by Bob Dylan.
+            <br />Printed on Hahnem&uuml;hle 350gm Museum Etching Paper
+        </p>
+    }
+    else
+    {
+        <h1>Crazy Horse Contemporary</h1>
+        <h2>@Model.CollectionName</h2>
+        <p>
+            Largely Acrylic &amp; Oil Pastels on Canvas, with some
+            Multi-media sketch box framed. 
+        </p>
+    }
 
     @using (Html.BeginForm())
     {
         <span style="font-size:1.0em;">
             @Html.DropDownList("CollectionID", String.Empty)
         </span>
-        
+
         <input type="submit" value="Change Collection" />
     }
 
@@ -31,106 +41,5 @@
 </section>
 
 <section>
-
-    <div class="row">
-        @foreach (var graphic in Model.Graphics)
-        {
-
-            if (colNo > 0 && colNo % 3 == 0)
-            {
-                @:</div><div class="row">
-            }
-
-            <div class="col-lg-4">
-                <article class="panel panel-success">
-                    <div class="panel-heading">
-                        <h4 class="text-center">@graphic.Title</h4>
-                    </div>
-                    <div class="panel-body">
-                        <a href="#print1Details" data-toggle="collapse">
-                            <figure>
-                                <img class="img-responsive" src="~/Images/@Model.ImagePath/@graphic.SmallImagePath">
-                            </figure>
-                        </a>
-                        <br />
-                        <p class="text-right">
-                            @Model.CollectionName
-                        </p>
-                        <p class="text-right">
-                            @graphic.Format Format
-                        </p>
-                        @if(graphic.Portfolio != DylanTaylorArt.Models.Portfolios.None)
-                        {
-                            <p class="text-right">
-                                @graphic.Portfolio
-                            </p>
-                        }
-                    <p class="text-right">
-                        @Html.Partial("Price", graphic)
-                        @*<strong>£@graphic.Price.ToString("N0")</strong>*@
-                    </p>
-                        @{ 
-                            string detailsID = "details" + graphic.GraphicID;
-                        }
-                        <p>
-                            <button class="btn btn-success pull-right" type="button"
-                                    data-toggle="collapse" data-target="#@detailsID">
-                                More Details
-                                @if (graphic.CopyNo > 0)
-                                {
-                                    <span class="badge">@graphic.CopyNo</span>
-                                }
-                            </button>
-                        </p>
-
-                        <div class="collapse" id="@detailsID">
-                        <br /><br />
-                        <div class="well">
-                            <table class="table table-bordered">
-                                <tr>
-                                    <td>
-                                        Image Size
-                                    </td>
-                                    <td>
-                                        @graphic.ImageHeight x @graphic.ImageWidth in
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Paper Size
-                                    </td>
-                                    <td>
-                                        @graphic.PaperHeight x @graphic.PaperWidth in
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Framed with
-                                    </td>
-                                    <td>
-                                        @graphic.FramedWith
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Copy No
-                                    </td>
-                                    <td>
-                                        @graphic.CopyNo/295
-                                    </td>
-                                </tr>
-
-                            </table>
-                        </div>
-                    </div>
-                                
-                </div>
-            </article>
-        </div>
-
-
-            colNo++;
-        }
-    </div>
-
+    @Html.Partial("_Graphic", Model)
 </section>

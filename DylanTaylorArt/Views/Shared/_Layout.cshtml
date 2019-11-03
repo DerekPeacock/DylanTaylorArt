@@ -47,7 +47,7 @@
                     <li>@Html.ActionLink("Collections", "Collections", "Home")</li>
                     <li>@Html.ActionLink("Gallery", "Gallery", "Home")</li>
                     <li>@Html.ActionLink("On Show", "Shows", "Home")</li>
-                    <li class="dropdown">
+                    <li class="dropdown" style="width:170px;">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                             Other Artists<span class="caret"></span>
                         </a>
@@ -56,10 +56,19 @@
                             <li>@Html.ActionLink("John Hoyland", "JohnHoyland", "Home")</li>
                             <li>@Html.ActionLink("Henry Moore", "HenryMoore", "Home")</li>
                             <li>@Html.ActionLink("Joan Miro", "JoanMiro", "Home")</li>
-                            <li>@Html.ActionLink("Picasso", "Picasso", "Home")</li>
+                            <li>@Html.ActionLink("Pablo Picasso", "Picasso", "Home")</li>
                         </ul>
                     </li>
-
+                    <li class="dropdown crazy-horse menu-item-width" style="">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Contemporary<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Oliver Kellert", "Kellert", "Home")</li>
+                            <li>@Html.ActionLink("James Green", "Green", "Home")</li>
+                            <li>@Html.ActionLink("Anonymous", "Anonymous", "Home")</li>
+                        </ul>
+                    </li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>

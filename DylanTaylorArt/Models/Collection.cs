@@ -30,6 +30,10 @@ namespace DylanTaylorArt.Models
     public enum Artists
     {
         [Display(Name = "Bob Dylan")]
-        Bob_Dylan
+        Bob_Dylan,
+        [Display(Name = "Oliver Kellert")]
+        Oliver_Kellert,
+        [Display(Name = "James Green")]
+        James_Green
     }
 }
