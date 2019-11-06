@@ -13,7 +13,7 @@ namespace DylanTaylorArt.Models
         [Required, ForeignKey("Collection")]
         public int CollectionID { get; set; }
 
-        [Range(0, 296), Display(Name ="Copy No")]
+        [Range(-1, 296), Display(Name ="Copy No")]
         public int CopyNo { get; set; }
 
         [Required, StringLength(60)]
@@ -84,12 +84,12 @@ namespace DylanTaylorArt.Models
             FramedWith = FrameMaterial.Glass;
 
             DisplayOnHomePage = false;
-            Paper = "Hahnemuhle 350gm Museum Etching Paper";
+            //Paper = "Hahnemuhle 350gm Museum Etching Paper";
         }
 
         public double CalculateMetricSize(double imperialSize)
         {
-            return imperialSize / INCHES_TO_CENTIMETERS;
+            return imperialSize * INCHES_TO_CENTIMETERS;
         }
     }
 

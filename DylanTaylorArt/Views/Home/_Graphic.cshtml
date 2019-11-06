@@ -15,6 +15,16 @@
             <article class="panel panel-success">
                 <div class="panel-heading">
                     <h4 class="text-center">@graphic.Title</h4>
+                    @if (graphic.CopyNo < 0)
+                    {
+                        <div class="text-center">
+
+                            <span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+                            <strong>Original</strong>
+                            <span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+
+                        </div>
+                    }
                 </div>
                 <div class="panel-body">
                     <a href="#print1Details" data-toggle="collapse">
