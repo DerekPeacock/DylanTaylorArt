@@ -1,15 +1,15 @@
 ﻿@model DylanTaylorArt.Models.Collection
-@{ 
+@{
     int colNo = 0;
     string panel = "panel panel-success";
     string style = " ";
 
-    if(Model.CollectionID == 12)
+    if (Model.CollectionID == 12)
     {
         style = "background-color:#ca5535; color:white";
         panel = "panel panel-danger";
     }
-    else if(Model.CollectionID == 11)
+    else if (Model.CollectionID == 11)
     {
         style = "background-color:yellow;";
         panel = "panel panel-info";
@@ -19,133 +19,136 @@
 <div class="row">
     @foreach (var graphic in Model.Graphics)
     {
-
-        if (colNo > 0 && colNo % 3 == 0)
+        if (graphic.Status != DylanTaylorArt.Models.GraphicStatus.Withdrawn)
         {
-        @:</div><div class="row">
-        }
+            if (colNo > 0 && colNo % 3 == 0)
+            {
+            @:</div><div class="row">
+            }
 
-        <div class="col-lg-4">
-            <article class="@panel">
-                <div class="panel-heading" style="@style">
-                    <h4 class="text-center">@graphic.Title</h4>
-                    @if (graphic.CopyNo < 0)
-                    {
-                        <div class="text-center">
+            <div class="col-lg-4">
+                <article class="@panel">
+                    <div class="panel-heading" style="@style">
+                        <h4 class="text-center">@graphic.Title</h4>
+                        @if (graphic.CopyNo < 0)
+                        {
+                            <div class="text-center">
 
-                            <span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
-                            <strong>Original</strong>
-                            <span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+                                <strong>Original</strong>
+                                <span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
 
-                        </div>
-                    }
-                </div>
-                <div class="panel-body">
-                    <a href="~/Images/@Model.ImagePath/@graphic.SmallImagePath" target="_blank">
-                        <figure>
-                            <img class="img-responsive" src="~/Images/@Model.ImagePath/@graphic.SmallImagePath">
-                        </figure>
-                    </a>
-                    <br />
-                    <p class="text-right">
-                        @Model.CollectionName
-                    </p>
-                    <p class="text-right">
-                        @graphic.Format Format
-                    </p>
-                    @if (graphic.Portfolio != DylanTaylorArt.Models.Portfolios.None)
-                    {
+                            </div>
+                        }
+                    </div>
+                    <div class="panel-body">
+                        <a href="~/Images/@Model.ImagePath/@graphic.SmallImagePath" target="_blank">
+                            <figure>
+                                <img class="img-responsive" src="~/Images/@Model.ImagePath/@graphic.SmallImagePath">
+                            </figure>
+                        </a>
+                        <br />
                         <p class="text-right">
-                            @graphic.Portfolio
+                            @Model.CollectionName
                         </p>
-                    }
-                    <p class="text-right">
-                        @Html.Partial("Price", graphic)
-                        @*<strong>£@graphic.Price.ToString("N0")</strong>*@
-                    </p>
-                    @{
-                        string detailsID = "details" + graphic.GraphicID;
-                    }
-                    <p>
-                        <button class="btn btn-success pull-right" type="button"
-                                data-toggle="collapse" data-target="#@detailsID">
-                            More Details
-                            @if (graphic.CopyNo > 0)
-                            {
-                                <span class="badge">@graphic.CopyNo</span>
-                            }
-                        </button>
-                    </p>
-
-                    <div class="collapse" id="@detailsID">
-                        <br /><br />
-                        <div class="well">
-                            <table class="table table-bordered">
-                                @if (graphic.Description != null)
-                                {
-                                    <tr>
-                                        <td>
-                                            Description
-                                        </td>
-                                        <td>
-                                            @graphic.Description
-                                        </td>
-                                    </tr>
-                                }
-
-                                <tr>
-                                    <td>
-                                        Image Size
-                                    </td>
-                                    <td>
-                                        @graphic.ImageHeight x @graphic.ImageWidth in
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Painted
-                                    </td>
-                                    <td>
-                                        @graphic.Paper
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Paper Size
-                                    </td>
-                                    <td>
-                                        @graphic.PaperHeight x @graphic.PaperWidth in
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Framed with
-                                    </td>
-                                    <td>
-                                        @graphic.FramedWith
-                                    </td>
-                                </tr>
+                        <p class="text-right">
+                            @graphic.Format Format
+                        </p>
+                        @if (graphic.Portfolio != DylanTaylorArt.Models.Portfolios.None)
+                        {
+                            <p class="text-right">
+                                @graphic.Portfolio
+                            </p>
+                        }
+                        <p class="text-right">
+                            @Html.Partial("Price", graphic)
+                            @*<strong>£@graphic.Price.ToString("N0")</strong>*@
+                        </p>
+                        @{
+                            string detailsID = "details" + graphic.GraphicID;
+                        }
+                        <p>
+                            <button class="btn btn-success pull-right" type="button"
+                                    data-toggle="collapse" data-target="#@detailsID">
+                                More Details
                                 @if (graphic.CopyNo > 0)
                                 {
+                                    <span class="badge">@graphic.CopyNo</span>
+                                }
+                            </button>
+                        </p>
+
+                        <div class="collapse" id="@detailsID">
+                            <br /><br />
+                            <div class="well">
+                                <table class="table table-bordered">
+                                    @if (graphic.Description != null)
+                                    {
+                                        <tr>
+                                            <td>
+                                                Description
+                                            </td>
+                                            <td>
+                                                @graphic.Description
+                                            </td>
+                                        </tr>
+                                    }
+
                                     <tr>
                                         <td>
-                                            Copy No
+                                            Image Size
                                         </td>
                                         <td>
-                                            @graphic.CopyNo/295
+                                            @graphic.ImageHeight x @graphic.ImageWidth in
                                         </td>
                                     </tr>
-                                }
+                                    <tr>
+                                        <td>
+                                            Painted
+                                        </td>
+                                        <td>
+                                            @graphic.Paper
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Paper Size
+                                        </td>
+                                        <td>
+                                            @graphic.PaperHeight x @graphic.PaperWidth in
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Framed with
+                                        </td>
+                                        <td>
+                                            @graphic.FramedWith
+                                        </td>
+                                    </tr>
+                                    @if (graphic.CopyNo > 0)
+                                    {
+                                        <tr>
+                                            <td>
+                                                Copy No
+                                            </td>
+                                            <td>
+                                                @graphic.CopyNo/295
+                                            </td>
+                                        </tr>
+                                    }
 
-                            </table>
+                                </table>
+                            </div>
                         </div>
+
                     </div>
+                </article>
+            </div>
 
-                </div>
-            </article>
-        </div>
+            colNo++;
 
-        colNo++;
+        }
     }
 </div>
 
