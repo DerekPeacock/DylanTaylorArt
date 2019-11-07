@@ -1,0 +1,34 @@
+﻿@model DylanTaylorArt.Models.Collection
+
+@{
+    ViewBag.Title = "Oliver Kellert";
+
+}
+
+<section class="jumbotron">
+
+    <h1 class="crazy-horse">Crazy Horse Contemporary</h1>
+    <h2>James Green</h2>
+
+    <blockquote>
+        <p>
+            <strong>James Green (British, b. 1989)</strong>, paints indulgent, abstract images 
+            that critique (rather than celebrate) a system that favours the fortunate and neglects 
+            the less-so. Rooted in a balance somewhere between fine art tradition and contemporary 
+            practice, his paintings often include obscured faces, within spontaneous compositions. 
+            The works reject hierarchy and revel in their physicality, showcasing a thick impasto 
+            and bold colour to challenge the notion of beauty in art. The artist ‘trained’ at Cardiff 
+            School of Art, although insists he is entirely self-taught. James shows nationally and 
+            sells internationally.
+        </p>
+    </blockquote>
+
+    <div class="text-right">
+        <a href="~/Home/Contact" class="btn btn-success btn-lg">Contact Martin &raquo;</a>
+    </div>
+
+</section>
+
+<section>
+    @Html.Partial("_Graphic", Model)
+</section>

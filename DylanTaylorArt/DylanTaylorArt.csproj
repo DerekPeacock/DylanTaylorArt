@@ -324,8 +324,12 @@
     <Content Include="Images\Green\In a while crocodile.jpg" />
     <Content Include="Images\Green\Reclining Nude.jpg" />
     <Content Include="Images\Green\Self Portrait.jpg" />
+    <Content Include="Images\Green\Show of Hands.jpg" />
+    <Content Include="Images\Green\Star is Born.jpg" />
     <Content Include="Images\Green\Star Service.jpg" />
     <Content Include="Images\Green\The Surrender.jpg" />
+    <Content Include="Images\Green\Tits and Cats.png" />
+    <Content Include="Images\Green\We Commoners.jpg" />
     <Content Include="Images\Green\When the chips are down.jpg" />
     <Content Include="Images\HenryMoore\3Figures1966.jpg" />
     <Content Include="Images\HenryMoore\3RecliningFigures.jpg" />
@@ -417,6 +421,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Assets\oliver kellert power.pdf" />
     <None Include="Properties\PublishProfiles\dylantaylorart.com - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\dylantaylorart.com - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\valerianweb.com - FTP.pubxml" />
@@ -491,6 +496,7 @@
     <Content Include="Views\Home\Picasso.cshtml" />
     <Content Include="Views\Home\Kellert.cshtml" />
     <Content Include="Views\Home\_Graphic.cshtml" />
+    <Content Include="Views\Home\Green.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

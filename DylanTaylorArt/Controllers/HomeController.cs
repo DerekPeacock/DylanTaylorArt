@@ -94,7 +94,7 @@ namespace DylanTaylorArt.Controllers
         {
             ViewBag.Message = "Your on the Green page.";
 
-            return View();
+            return View(db.Collections.Find(12));
         }
 
         protected void PopulateDropdowns(object selectedCollection = null)

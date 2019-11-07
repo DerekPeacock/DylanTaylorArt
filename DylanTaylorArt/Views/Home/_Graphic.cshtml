@@ -1,6 +1,20 @@
 ﻿@model DylanTaylorArt.Models.Collection
 @{ 
     int colNo = 0;
+    string panel = "panel panel-success";
+    string style = " ";
+
+    if(Model.CollectionID == 12)
+    {
+        style = "background-color:#ca5535; color:white";
+        panel = "panel panel-danger";
+    }
+    else if(Model.CollectionID == 11)
+    {
+        style = "background-color:yellow;";
+        panel = "panel panel-info";
+    }
+
 }
 <div class="row">
     @foreach (var graphic in Model.Graphics)
@@ -12,8 +26,8 @@
         }
 
         <div class="col-lg-4">
-            <article class="panel panel-success">
-                <div class="panel-heading">
+            <article class="@panel">
+                <div class="panel-heading" style="@style">
                     <h4 class="text-center">@graphic.Title</h4>
                     @if (graphic.CopyNo < 0)
                     {
@@ -27,7 +41,7 @@
                     }
                 </div>
                 <div class="panel-body">
-                    <a href="#print1Details" data-toggle="collapse">
+                    <a href="~/Images/@Model.ImagePath/@graphic.SmallImagePath" target="_blank">
                         <figure>
                             <img class="img-responsive" src="~/Images/@Model.ImagePath/@graphic.SmallImagePath">
                         </figure>

@@ -78,13 +78,14 @@ namespace DylanTaylorArt.Models
 
         public Graphic()
         {
-            Format = GraphicFormats.Unknown;
+            CollectionID = 12;
+            Format = GraphicFormats.Medium;
             Aspect = PictureAspects.Unknown;
             Status = GraphicStatus.ForSale;
-            FramedWith = FrameMaterial.Glass;
+            FramedWith = FrameMaterial.None;
 
             DisplayOnHomePage = false;
-            //Paper = "Hahnemuhle 350gm Museum Etching Paper";
+            Paper = "Mixed media on canvas";
         }
 
         public double CalculateMetricSize(double imperialSize)
