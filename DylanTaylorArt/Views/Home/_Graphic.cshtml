@@ -3,6 +3,7 @@
     int colNo = 0;
     string panel = "panel panel-success";
     string style = " ";
+    string largeImageURL = null;
 
     if (Model.CollectionID == 12)
     {
@@ -26,6 +27,15 @@
             @:</div><div class="row">
             }
 
+            if(graphic.LargeImagePath == null)
+            {
+                largeImageURL = graphic.SmallImagePath;
+            }
+            else
+            {
+                largeImageURL = graphic.LargeImagePath;
+            }
+
             <div class="col-lg-4">
                 <article class="@panel">
                     <div class="panel-heading" style="@style">
@@ -42,7 +52,7 @@
                         }
                     </div>
                     <div class="panel-body">
-                        <a href="~/Images/@Model.ImagePath/@graphic.SmallImagePath" target="_blank">
+                        <a href="~/Images/@Model.ImagePath/@largeImageURL" target="_blank">
                             <figure>
                                 <img class="img-responsive" src="~/Images/@Model.ImagePath/@graphic.SmallImagePath">
                             </figure>
