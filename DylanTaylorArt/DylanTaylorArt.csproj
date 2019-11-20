@@ -322,6 +322,9 @@
     <Content Include="Images\Green\Crocodile Tears.jpg" />
     <Content Include="Images\Green\Empowered Paradox.jpg" />
     <Content Include="Images\Green\In a while crocodile.jpg" />
+    <Content Include="Images\Green\Missed the Bus.jpg" />
+    <Content Include="Images\Green\Off with your Head.jpg" />
+    <Content Include="Images\Green\Off with your Leggs.jpg" />
     <Content Include="Images\Green\Reclining Nude.jpg" />
     <Content Include="Images\Green\Self Portrait.jpg" />
     <Content Include="Images\Green\Show of Hands.jpg" />
@@ -423,6 +426,8 @@
     <Content Include="Images\Shows\2017MarksTilt4.jpg" />
     <Content Include="Images\Shows\2017MarksTilt5.jpg" />
     <Content Include="Images\Slide04.jpg" />
+    <Content Include="Images\Slide05.jpg" />
+    <Content Include="Images\Slide06.jpg" />
     <Content Include="Images\slide1.png" />
     <Content Include="Images\slide2.png" />
     <Content Include="Images\slide3.png" />
