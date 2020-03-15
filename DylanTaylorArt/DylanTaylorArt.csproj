@@ -319,8 +319,10 @@
     <Content Include="Images\Delaunay\IMG_3362.JPG" />
     <Content Include="Images\Delaunay\IMG_3363.JPG" />
     <Content Include="Images\Delaunay\IMG_3364.JPG" />
+    <Content Include="Images\Green\Banana Split.jpg" />
     <Content Include="Images\Green\Crocodile Tears.jpg" />
     <Content Include="Images\Green\Empowered Paradox.jpg" />
+    <Content Include="Images\Green\Flowers.jpg" />
     <Content Include="Images\Green\In a while crocodile.jpg" />
     <Content Include="Images\Green\Missed the Bus.jpg" />
     <Content Include="Images\Green\Off with your Head.jpg" />
@@ -332,6 +334,7 @@
     <Content Include="Images\Green\Star Service.jpg" />
     <Content Include="Images\Green\The Surrender.jpg" />
     <Content Include="Images\Green\Tits and Cats.png" />
+    <Content Include="Images\Green\Untitled Portrait.jpg" />
     <Content Include="Images\Green\We Commoners.jpg" />
     <Content Include="Images\Green\When the chips are down.jpg" />
     <Content Include="Images\HenryMoore\3Figures1966.jpg" />
@@ -382,6 +385,7 @@
     <Content Include="Images\Logo.png" />
     <Content Include="Images\Logo1.jpg" />
     <Content Include="Images\Logo2.png" />
+    <Content Include="Images\MiroSlide.png" />
     <Content Include="Images\Miro\ColourOne.jpg" />
     <Content Include="Images\Miro\IMG_3275.JPG" />
     <Content Include="Images\Miro\IMG_3276.JPG" />
@@ -431,6 +435,7 @@
     <Content Include="Images\slide1.png" />
     <Content Include="Images\slide2.png" />
     <Content Include="Images\slide3.png" />
+    <Content Include="Images\Slide4.png" />
     <Content Include="Notes.html" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
