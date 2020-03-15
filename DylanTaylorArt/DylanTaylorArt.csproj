@@ -436,6 +436,7 @@
     <Content Include="Images\slide2.png" />
     <Content Include="Images\slide3.png" />
     <Content Include="Images\Slide4.png" />
+    <Content Include="Images\Slide5.png" />
     <Content Include="Notes.html" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
