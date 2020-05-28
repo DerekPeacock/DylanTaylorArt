@@ -339,10 +339,13 @@
     <Content Include="Images\Green\We Commoners.jpg" />
     <Content Include="Images\Green\When the chips are down.jpg" />
     <Content Include="Images\HenryMoore\3 Sisters.jpg" />
+    <Content Include="Images\HenryMoore\3 Sisters_sm.jpg" />
     <Content Include="Images\HenryMoore\3Figures1966.jpg" />
     <Content Include="Images\HenryMoore\3RecliningFigures.jpg" />
     <Content Include="Images\HenryMoore\7 Sculptural Ideas.jpg" />
+    <Content Include="Images\HenryMoore\7 Sculptural Ideas_sm.jpg" />
     <Content Include="Images\HenryMoore\8 Sculptural Ideas.jpg" />
+    <Content Include="Images\HenryMoore\8 Sculptural Ideas_sm.jpg" />
     <Content Include="Images\HenryMoore\BlackSeatedOrange.jpg" />
     <Content Include="Images\HenryMoore\Petals.jpg" />
     <Content Include="Images\HenryMoore\VioletTorso.jpg" />

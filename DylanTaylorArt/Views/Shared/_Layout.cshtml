@@ -39,27 +39,35 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="~/Home/"><img src="~/Images/Logo.png" style="height:60px;margin-top:10px;" /></a>
-                @Html.ActionLink(" ", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <a href="~/Home/">
+                    <img src="~/Images/Logo.png" style="height:60px;margin-top:10px;" />
+                    @Html.ActionLink(" ", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </a>
             </div>
             <div class="navbar-collapse collapse lead" style="padding-top:10px">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Collections", "Collections", "Home")</li>
-                    <li>@Html.ActionLink("Gallery", "Gallery", "Home")</li>
-                    <li>@Html.ActionLink("On Show", "Shows", "Home")</li>
-                    <li class="dropdown" style="width:170px;">
+                    <li class="dropdown" style="width:140px;">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                            Other Artists<span class="caret"></span>
+                            Bob Dylan<span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li>@Html.ActionLink("Sonia Delaunay", "SoniaDelaunay", "Home")</li>
-                            <li>@Html.ActionLink("John Hoyland", "JohnHoyland", "Home")</li>
-                            <li>@Html.ActionLink("Henry Moore", "HenryMoore", "Home")</li>
-                            <li>@Html.ActionLink("Joan Miro", "JoanMiro", "Home")</li>
-                            <li>@Html.ActionLink("Pablo Picasso", "Picasso", "Home")</li>
+                            <li>@Html.ActionLink("Drawn Blank Series 2008", "Collections", "Home", new { CollectionID = 1 }, null)</li>
+                            <li>@Html.ActionLink("Drawn Blank Series 2009", "Collections", "Home", new { CollectionID = 2 }, null)</li>
+                            <li>@Html.ActionLink("Drawn Blank Series 2010", "Collections", "Home", new { CollectionID = 3 }, null)</li>
+                            <li>@Html.ActionLink("Drawn Blank Series 2011", "Collections", "Home", new { CollectionID = 4 }, null)</li>
+                            <li>@Html.ActionLink("Drawn Blank Series 2012", "Collections", "Home", new { CollectionID = 5 }, null)</li>
+                            <li>@Html.ActionLink("Drawn Blank Series 2013", "Collections", "Home", new { CollectionID = 6 }, null)</li>
+                            <li>@Html.ActionLink("Drawn Blank Series 2014", "Collections", "Home", new { CollectionID = 7 }, null)</li>
+                            <li>@Html.ActionLink("Drawn Blank Series 2016", "Collections", "Home", new { CollectionID = 8 }, null)</li>
+                            <li>@Html.ActionLink("The Brazil Series", "Collections", "Home", new { CollectionID = 10 }, null)</li>
+                            <li>@Html.ActionLink("Bob Dylan Gallery", "Gallery", "Home")</li>
                         </ul>
                     </li>
+                    <li>@Html.ActionLink("Moore", "HenryMoore", "Home")</li>
+                    <li>@Html.ActionLink("Picasso", "Picasso", "Home")</li>
+                    <li>@Html.ActionLink("Miro", "JoanMiro", "Home")</li>
+                    <li>@Html.ActionLink("Delaunay", "SoniaDelaunay", "Home")</li>
+                    <li>@Html.ActionLink("Hoyland", "JohnHoyland", "Home")</li>
                     <li class="dropdown crazy-horse menu-item-width" style="">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                             Crazy Horse<span class="caret"></span>
@@ -69,8 +77,6 @@
                             <li>@Html.ActionLink("Oliver Kellert", "Kellert", "Home")</li>
                         </ul>
                     </li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
                 @*@Html.Partial("_LoginPartial")*@
             </div>
@@ -84,11 +90,14 @@
             <p>
                 <a href="~/Home/Contact">Martin Taylor</a>
                 &copy; @DateTime.Now.Year - Dylan Taylor Art |
-                <a href="http://www.bobdylanart.com/">Bob Dylan Art</a> | 
-                <a href="http://jamesgreenartist.co.uk/">jamesgreenartist.co.uk</a>
+                <a href="http://www.bobdylanart.com/" target="_blank">Bob Dylan Art</a> |
+                <a href="http://jamesgreenartist.co.uk/" target="_blank">jamesgreenartist.co.uk</a> |
+                @Html.ActionLink("About", "About", "Home") |
+                @Html.ActionLink("Contact", "Contact", "Home") |
+                @Html.ActionLink("On Show", "Shows", "Home")
             </p>
             <p>
-                <a heref="https://www.thebobvillains.com/">
+                <a href="https://www.thebobvillains.com/" target="_blank">
                     The Bob Villains <img src="~/Images/BobVillains.jpg" alt="Bob Villains Image" width="60" />
                 </a>
             </p>
