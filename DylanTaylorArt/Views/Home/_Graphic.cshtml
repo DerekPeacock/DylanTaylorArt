@@ -20,7 +20,8 @@
 <div class="row">
     @foreach (var graphic in Model.Graphics)
     {
-        if (graphic.Status != DylanTaylorArt.Models.GraphicStatus.Withdrawn)
+        if ((graphic.Status != DylanTaylorArt.Models.GraphicStatus.Withdrawn) &&
+            (graphic.Status !=DylanTaylorArt.Models.GraphicStatus.Sold ))
         {
             if (colNo > 0 && colNo % 3 == 0)
             {

@@ -39,7 +39,9 @@ namespace DylanTaylorArt.Controllers
         public ActionResult Collections(int CollectionID)
         {
             PopulateDropdowns(CollectionID);
-            return View(db.Collections.Find(CollectionID));
+            var collection = db.Collections.Find(CollectionID);
+
+            return View(collection);
         }
 
         public ActionResult Shows()
