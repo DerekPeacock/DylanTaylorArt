@@ -45,6 +45,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -112,12 +118,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core">
       <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.2\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
     </Reference>
@@ -270,6 +270,9 @@
     <Content Include="Images\Brazil\Portfolio2.png" />
     <Content Include="Images\Brazil\Portfolio3.png" />
     <Content Include="Images\Brazil\VillaBroncos.png" />
+    <Content Include="Images\Chagall\LeVisage.jpg" />
+    <Content Include="Images\Chagall\LoiseauP.jpg" />
+    <Content Include="Images\Chagall\RecontreRuth.jpg" />
     <Content Include="Images\DB2008\ManBridge4.png" />
     <Content Include="Images\DB2008\TrainTracks4.png" />
     <Content Include="Images\DB2008\WomanInPub4.png" />
@@ -537,6 +540,7 @@
     <Content Include="Views\Home\Kellert.cshtml" />
     <Content Include="Views\Home\_Graphic.cshtml" />
     <Content Include="Views\Home\Green.cshtml" />
+    <Content Include="Views\Home\Chagall.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
