@@ -352,6 +352,11 @@
     <Content Include="Images\HenryMoore\BlackSeatedOrange.jpg" />
     <Content Include="Images\HenryMoore\Petals.jpg" />
     <Content Include="Images\HenryMoore\VioletTorso.jpg" />
+    <Content Include="Images\Hockney\5Leaves.jpg" />
+    <Content Include="Images\Hockney\Drawing281.jpg" />
+    <Content Include="Images\Hockney\HatOnChair.jpg" />
+    <Content Include="Images\Hockney\Stanley86.jpg" />
+    <Content Include="Images\Hockney\Untitled-93.jpg" />
     <Content Include="Images\JohnHoyland\CurwenAP.jpg" />
     <Content Include="Images\JohnHoyland\FriendlyGhost.jpg" />
     <Content Include="Images\JohnHoyland\Kinor.jpg" />
@@ -415,6 +420,7 @@
     <Content Include="Images\Miro\IMG_3319.JPG" />
     <Content Include="Images\Miro\Miro-01.jpg" />
     <Content Include="Images\Picasso\Fauns Dance.jpg" />
+    <Content Include="Images\Picasso\Fauns Dance1080.jpg" />
     <Content Include="Images\Picasso\Flowers for UCLA.jpg" />
     <Content Include="Images\Picasso\IMG_3365 %281%29.JPG" />
     <Content Include="Images\Picasso\IMG_3365.jpg" />
@@ -541,6 +547,7 @@
     <Content Include="Views\Home\_Graphic.cshtml" />
     <Content Include="Views\Home\Green.cshtml" />
     <Content Include="Views\Home\Chagall.cshtml" />
+    <Content Include="Views\Home\Hockney.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

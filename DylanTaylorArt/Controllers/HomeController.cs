@@ -58,6 +58,13 @@ namespace DylanTaylorArt.Controllers
             return View();
         }
 
+        public ActionResult Hockney()
+        {
+            ViewBag.Message = "Your on the Hockney page.";
+
+            return View();
+        }
+
         public ActionResult HenryMoore()
         {
             ViewBag.Message = "Your on the Henry Moore page.";
