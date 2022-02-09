@@ -354,9 +354,14 @@
     <Content Include="Images\HenryMoore\VioletTorso.jpg" />
     <Content Include="Images\Hockney\5Leaves.jpg" />
     <Content Include="Images\Hockney\Drawing281.jpg" />
+    <Content Include="Images\Hockney\GlassTable sm.jpg" />
+    <Content Include="Images\Hockney\GlassTable.jpg" />
     <Content Include="Images\Hockney\HatOnChair.jpg" />
+    <Content Include="Images\Hockney\Seranade sm.jpg" />
     <Content Include="Images\Hockney\Seranade.jpg" />
     <Content Include="Images\Hockney\Stanley86.jpg" />
+    <Content Include="Images\Hockney\Still Life 1 sm.jpg" />
+    <Content Include="Images\Hockney\Still Life 1.jpg" />
     <Content Include="Images\Hockney\Untitled-93.jpg" />
     <Content Include="Images\Hockney\Walking.jpg" />
     <Content Include="Images\JohnHoyland\CurwenAP.jpg" />
