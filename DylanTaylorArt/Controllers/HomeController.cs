@@ -88,14 +88,21 @@ namespace DylanTaylorArt.Controllers
 
         public ActionResult JoanMiro()
         {
-            ViewBag.Message = "Your on the Joan Miro page.";
+            ViewBag.Message = "You are on the Joan Miro page.";
 
             return View();
         }
 
-        public ActionResult Picasso()
+		public ActionResult Matisse()
+		{
+			ViewBag.Message = "You are on the Henri Matisse page.";
+
+			return View();
+		}
+
+		public ActionResult Picasso()
         {
-            ViewBag.Message = "Your on the Picasso page.";
+            ViewBag.Message = "You are on the Picasso page.";
 
             return View();
         }

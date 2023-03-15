@@ -408,6 +408,10 @@
     <Content Include="Images\Logo.png" />
     <Content Include="Images\Logo1.jpg" />
     <Content Include="Images\Logo2.png" />
+    <Content Include="Images\Matisse\SpanishLady.jpg" />
+    <Content Include="Images\Matisse\SpanishLady_sig.jpg" />
+    <Content Include="Images\Matisse\VirginChild.jpg" />
+    <Content Include="Images\Matisse\VirginChild_sig.jpg" />
     <Content Include="Images\MiroSlide.png" />
     <Content Include="Images\Miro\ColourOne.jpg" />
     <Content Include="Images\Miro\FailleDuCalcaire.jpg" />
@@ -564,6 +568,7 @@
     <Content Include="Views\Home\Green.cshtml" />
     <Content Include="Views\Home\Chagall.cshtml" />
     <Content Include="Views\Home\Hockney.cshtml" />
+    <Content Include="Views\Home\Matisse.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
