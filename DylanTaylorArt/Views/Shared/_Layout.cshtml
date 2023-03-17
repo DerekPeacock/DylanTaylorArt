@@ -46,11 +46,9 @@
             </div>
             <div class="navbar-collapse collapse lead" style="padding-top:10px">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Hockney", "Hockney", "Home")</li>
-                    <li>@Html.ActionLink("Moore", "HenryMoore", "Home")</li>
-                    <li>@Html.ActionLink("Picasso", "Picasso", "Home")</li>
                     <li class="dropdown" style="width:140px;">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                           role="button" aria-haspopup="true" aria-expanded="false">
                             Bob Dylan<span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
@@ -64,9 +62,21 @@
                             <li>@Html.ActionLink("Bob Dylan Gallery", "Gallery", "Home")</li>
                         </ul>
                     </li>
-                    <li>@Html.ActionLink("Delaunay", "SoniaDelaunay", "Home")</li>
+                    <li class="dropdown" style="width:140px;">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                           role="button" aria-haspopup="true" aria-expanded="false">
+                           Artists<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Hockney", "Hockney", "Home")</li>
+                            <li>@Html.ActionLink("Moore", "HenryMoore", "Home")</li>
+                            <li>@Html.ActionLink("Picasso", "Picasso", "Home")</li>
+                            <li>@Html.ActionLink("Delaunay", "SoniaDelaunay", "Home")</li>
+                            <li>@Html.ActionLink("Miro", "JoanMiro", "Home")</li>
+                        </ul>
+                    </li>
+
                     @*<li>@Html.ActionLink("Chagall", "Chagall", "Home")</li>*@
-                    <li>@Html.ActionLink("Miro", "JoanMiro", "Home")</li>
                     <li class="dropdown crazy-horse menu-item-width" style="width:150px">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                             Crazy Horse<span class="caret"></span>
