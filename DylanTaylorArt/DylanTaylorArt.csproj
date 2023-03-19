@@ -353,6 +353,19 @@
     <Content Include="Images\HenryMoore\BlackSeatedOrange.jpg" />
     <Content Include="Images\HenryMoore\Petals.jpg" />
     <Content Include="Images\HenryMoore\VioletTorso.jpg" />
+    <Content Include="Images\Hilton\3 Figures.jpg" />
+    <Content Include="Images\Hilton\3 Figures.png" />
+    <Content Include="Images\Hilton\GardenView.jpg" />
+    <Content Include="Images\Hilton\GardenView.png" />
+    <Content Include="Images\Hilton\springtree.jpg" />
+    <Content Include="Images\Hilton\SpringTree.png" />
+    <Content Include="Images\Hilton\StandingNude.jpg" />
+    <Content Include="Images\Hilton\StandingNude.png" />
+    <Content Include="Images\Hilton\TeaNewlyn.jpg" />
+    <Content Include="Images\Hilton\TeaNewlyn.png" />
+    <Content Include="Images\Hilton\Untitled1.jpg" />
+    <Content Include="Images\Hilton\Untitled2.jpg" />
+    <Content Include="Images\Hilton\Untitled2.png" />
     <Content Include="Images\Hockney\5Leaves.jpg" />
     <Content Include="Images\Hockney\Drawing281.jpg" />
     <Content Include="Images\Hockney\GlassTable sm.jpg" />
@@ -569,6 +582,7 @@
     <Content Include="Views\Home\Chagall.cshtml" />
     <Content Include="Views\Home\Hockney.cshtml" />
     <Content Include="Views\Home\Matisse.cshtml" />
+    <Content Include="Views\Home\Hilton.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

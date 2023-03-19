@@ -93,6 +93,12 @@ namespace DylanTaylorArt.Controllers
             return View();
         }
 
+		public ActionResult Hilton()
+		{
+			ViewBag.Message = "You are on the Rose Hilton page.";
+
+			return View();
+		}
 		public ActionResult Matisse()
 		{
 			ViewBag.Message = "You are on the Henri Matisse page.";
