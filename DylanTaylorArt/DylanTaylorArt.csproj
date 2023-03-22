@@ -355,6 +355,10 @@
     <Content Include="Images\HenryMoore\VioletTorso.jpg" />
     <Content Include="Images\Hilton\3 Figures.jpg" />
     <Content Include="Images\Hilton\3 Figures.png" />
+    <Content Include="Images\Hilton\BontanicLandscape.jpg" />
+    <Content Include="Images\Hilton\BontanicLandscape.png" />
+    <Content Include="Images\Hilton\Botallack.jpg" />
+    <Content Include="Images\Hilton\Botallack.png" />
     <Content Include="Images\Hilton\GardenView.jpg" />
     <Content Include="Images\Hilton\GardenView.png" />
     <Content Include="Images\Hilton\springtree.jpg" />
