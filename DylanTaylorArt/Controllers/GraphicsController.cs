@@ -10,7 +10,7 @@ using DylanTaylorArt.Models;
 
 namespace DylanTaylorArt.Controllers
 {
-    [Authorize]
+    [Authorize(Roles ="Admin")]
     public class GraphicsController : Controller
     {
         private GraphicDbContext db = new GraphicDbContext();
